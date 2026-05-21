@@ -534,7 +534,6 @@ section[id] {
 .card,
 .feature-panel,
 .form-panel,
-.founder-card,
 .action-card,
 .track-card,
 .metric-card {
@@ -560,8 +559,7 @@ section[id] {
 .program-card h3,
 .guide-card h3,
 .feature-panel h2,
-.action-card h3,
-.founder-card h3 {
+.action-card h3 {
   margin: 0;
   font-size: 1.35rem;
   line-height: 1.1;
@@ -570,8 +568,7 @@ section[id] {
 .source-card p,
 .program-card p,
 .feature-panel p,
-.action-card p,
-.founder-card p {
+.action-card p {
   color: var(--ink-soft);
 }
 
@@ -701,12 +698,58 @@ section[id] {
   font-weight: 800;
 }
 
-.founder-card,
 .feature-panel,
 .form-panel,
 .action-card {
   padding: 26px;
   background: var(--paper);
+}
+
+.founder-layout {
+  display: grid;
+  grid-template-columns: minmax(240px, 0.42fr) minmax(0, 0.58fr);
+  gap: 44px;
+  align-items: center;
+}
+
+.founder-photo-placeholder {
+  display: grid;
+  min-height: 360px;
+  place-items: center;
+  color: var(--muted);
+  background:
+    linear-gradient(135deg, rgba(255, 212, 51, 0.18), rgba(47, 128, 237, 0.08)),
+    var(--paper);
+  border: 3px dashed var(--ink);
+  border-radius: 22px;
+}
+
+.founder-photo-placeholder span {
+  display: inline-flex;
+  padding: 10px 14px;
+  background: var(--paper);
+  border: 2px solid var(--ink);
+  border-radius: 999px;
+  font-weight: 950;
+}
+
+.founder-copy {
+  max-width: 680px;
+}
+
+.founder-copy h2 {
+  margin: 0;
+  font-size: clamp(2rem, 3rem, 3rem);
+  line-height: 1.04;
+}
+
+.founder-copy p:not(.eyebrow) {
+  color: var(--ink-soft);
+  font-size: 1.08rem;
+}
+
+.founder-copy .button {
+  margin-top: 10px;
 }
 
 .modal-open {
@@ -1483,6 +1526,7 @@ section[id] {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .founder-layout,
   .two-column,
   .challenge-grid {
     grid-template-columns: 1fr;
@@ -1547,6 +1591,7 @@ section[id] {
 
   .section-header h2,
   .two-column h2,
+  .founder-copy h2,
   .feature-panel h2,
   .form-panel h2 {
     font-size: 2.05rem;
@@ -1577,13 +1622,20 @@ section[id] {
   .program-card,
   .feature-panel,
   .form-panel,
-  .founder-card,
   .action-card,
   .guide-card,
   .featured-guide-card,
   .mini-card,
   .preview-panel {
     padding: 18px;
+  }
+
+  .founder-layout {
+    gap: 26px;
+  }
+
+  .founder-photo-placeholder {
+    min-height: 260px;
   }
 
   .featured-guide-card,

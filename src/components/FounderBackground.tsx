@@ -33,17 +33,22 @@ export function FounderBackground() {
 
   return (
     <section className="section">
-      <div className="container two-column align-center">
-        <div>
+      <div className="container founder-layout">
+        <div className="founder-photo-placeholder" aria-label="Founder photo placeholder">
+          <span>Founder photo</span>
+        </div>
+        <div className="founder-copy">
           <p className="eyebrow">Founder background</p>
           <h2>Built from robotics advocacy.</h2>
-        </div>
-        <div className="founder-card">
-          <ul className="check-list">
-            <li>Participated in competitive robotics through VEX for the past seven years.</li>
-            <li>Worked on community advocacy to support public school robotics teams with unequal access to parts.</li>
-            <li>Won the 2024 VEX Robotics International STEM Advocacy Award for this work.</li>
-          </ul>
+          <p>
+            BricklabClips was created by a student builder who has spent the past seven years in competitive robotics through
+            VEX. That experience included advocacy work focused on helping public school robotics teams with unequal access to
+            parts and practice opportunities.
+          </p>
+          <p>
+            In 2024, that work received the VEX Robotics International STEM Advocacy Award. BricklabClips builds on the same
+            idea: students should have the chance to build, not just watch other people build online.
+          </p>
           <button
             className="button button-dark"
             type="button"

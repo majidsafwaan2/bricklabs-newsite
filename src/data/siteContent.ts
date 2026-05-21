@@ -49,35 +49,35 @@ export const siteContent = {
   problemSources: [
     {
       label: "39%",
-      title: "Technology and engineering access",
-      fact: "of afterschool programs offered technology and engineering activities in 2020.",
+      title: "Afterschool programs with tech and engineering",
+      fact: "Only 39% of afterschool programs offered technology and engineering activities in 2020.",
       source: "America After 3PM STEM Report",
       href: "https://afterschoolalliance.org/documents/AA3PM/AA3PM-STEM-Report-2021.pdf"
     },
     {
       label: "27% vs 44%",
       title: "Income gap in hands-on activities",
-      fact: "of lower-income parents reported technology and engineering activities, compared with 44% of higher-income parents.",
+      fact: "Parents in the lowest-income bracket reported technology and engineering activities at 27%, compared with 44% in the highest-income bracket.",
       source: "America After 3PM STEM Report",
       href: "https://afterschoolalliance.org/documents/AA3PM/AA3PM-STEM-Report-2021.pdf"
     },
     {
       label: "80%",
       title: "Virginia afterschool demand",
-      fact: "of Virginia youth are missing out on attending an afterschool program, according to Virginia After 3PM.",
+      fact: "In Virginia, 80% of youth are missing out on attending an afterschool program.",
       source: "VPOST Virginia After 3PM",
       href: "https://v-post.org/virginia-after-3pm/"
     },
     {
       label: "Nearly 500",
       title: "Local student interest",
-      fact: "elementary and middle school students from 15 Loudoun County schools participated in a robotics/STEM Innovation Day.",
+      fact: "Nearly 500 elementary and middle school students from 15 Loudoun County schools joined a robotics/STEM Innovation Day.",
       source: "Loudoun County Public Schools",
       href: "https://www.lcps.org/o/lcps/article/2837213"
     }
   ],
   loopSummary:
-    "The model is simple: use attention from builds to fund materials, then turn those materials into more student builds.",
+    "Build videos create attention. Sponsor support helps turn that attention into materials schools can use.",
   loopSteps: [
     {
       title: "Watch builds",

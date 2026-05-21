@@ -43,11 +43,12 @@ export default function HomePage() {
 
       <section className="section section-dark">
         <div className="container">
-          <SectionHeader eyebrow="How BricklabClips helps" title="Attention can become materials.">
-            The audience is already here. The school-materials side is launching with honest metrics that update as requests are funded.
+          <SectionHeader eyebrow="How BricklabClips helps" title="Reach now. Materials next.">
+            BricklabClips already reaches millions of people each month. As school requests open, this dashboard will show what
+            has been funded, purchased, and shipped.
           </SectionHeader>
           <ImpactDashboard metrics={homeMetrics} />
-          <p className="small-note">School support metrics start at zero and update only after approved materials are funded and shipped.</p>
+          <p className="small-note">School support numbers start at zero and update after approved requests are fulfilled.</p>
         </div>
       </section>
 
@@ -74,7 +75,7 @@ export default function HomePage() {
       <section className="section cta-band">
         <div className="container final-cta">
           <h2>Ready to build?</h2>
-          <p>Explore a guide, request materials for a school, or help fund the next classroom box.</p>
+          <p>Explore a guide, request materials for a school, or help fund the next classroom build.</p>
           <div className="hero-actions">
             <ButtonLink href="/library" variant="dark">
               Explore Builds
