@@ -45,6 +45,6 @@ The logo path is configured at `siteContent.brand.logoPath`.
 
 The current asset is `public/images/bricklabs-logo.jpg`. Replace that file or update `logoPath` if you store a different final mark elsewhere under `public`.
 
-## Generated images
+## Loop diagram
 
-The simple build-loop artwork lives at `public/images/build-loop-arrows.png` and is used by `src/components/ImpactLoopGraphic.tsx`.
+The simple build-loop diagram is built with text bubbles in `src/components/ImpactLoopGraphic.tsx` so the text stays crisp and editable.

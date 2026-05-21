@@ -37,17 +37,16 @@ export const siteContent = {
     exploreBuilds: { label: "Explore Builds", href: "/library" }
   },
   audienceStats: [
-    { label: "Monthly TikTok viewers", value: "16M+" },
-    { label: "Followers", value: "20.4K" },
-    { label: "Build challenge", value: "Coming soon" }
+    { label: "Monthly views", value: "16M+" },
+    { label: "Followers", value: "20.4K" }
   ],
   impactStats: [
+    { label: "Parts given to schools", value: "0" },
     { label: "Schools supported", value: "0" },
-    { label: "Materials shipped", value: "0" },
-    { label: "Dollars allocated to materials", value: "$0" },
+    { label: "Materials funded", value: "$0" },
     { label: "Students reached", value: "0" },
-    { label: "Build guides published", value: "0" },
-    { label: "2026 goal", value: "First 10 approved school support requests" }
+    { label: "Build guides live", value: "0" },
+    { label: "2026 goal", value: "10 requests" }
   ],
   problemSources: [
     {
@@ -80,27 +79,27 @@ export const siteContent = {
     }
   ],
   loopSummary:
-    "Watch it. Build it. Share it. The audience helps turn ideas into school materials.",
+    "The model is simple: use attention from builds to fund materials, then turn those materials into more student builds.",
   loopSteps: [
     {
       title: "Watch builds",
       shortTitle: "Watch",
-      description: "Short videos make engineering ideas easy to see."
+      description: "Short videos make engineering ideas visible."
     },
     {
-      title: "Sponsors fund materials",
+      title: "Fund materials",
       shortTitle: "Fund",
-      description: "Sponsors and ad revenue support school requests."
+      description: "Sponsors and revenue support school requests."
     },
     {
-      title: "Schools receive parts",
+      title: "Ship parts",
       shortTitle: "Ship",
-      description: "BricklabClips buys and ships approved materials."
+      description: "Approved requests become boxes sent to schools."
     },
     {
-      title: "Students build more",
+      title: "Students build",
       shortTitle: "Build",
-      description: "Classrooms and clubs turn parts into new creations."
+      description: "Classrooms build, share, and inspire the next project."
     }
   ],
   programs: [

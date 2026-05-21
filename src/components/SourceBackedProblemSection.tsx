@@ -5,14 +5,14 @@ export function SourceBackedProblemSection() {
     <section className="section section-white">
       <div className="container two-column">
         <div>
-          <p className="eyebrow">Why materials matter</p>
+          <p className="eyebrow">The problem</p>
           <h2>Watching is easier than building.</h2>
           <p className="lead">
-            Students can find engineering videos anywhere. The harder part is getting parts, tools, and simple challenges into
-            classrooms and clubs.
+            Students can find engineering videos anywhere. The harder part is getting parts, tools, and buildable challenges into
+            classrooms, clubs, and teams.
           </p>
           <p>
-            BricklabClips turns attention around build videos into free guides and funded school material requests.
+            BricklabClips is built to turn build-video attention into guides, funded school requests, and boxes of materials students can actually use.
           </p>
         </div>
         <div className="source-list" aria-label="Source-backed access facts">

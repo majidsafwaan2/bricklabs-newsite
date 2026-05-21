@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { ButtonLink } from "@/components/ButtonLink";
 import { Hero } from "@/components/Hero";
+import { ImpactDashboard } from "@/components/ImpactDashboard";
 import { ImpactLoopGraphic } from "@/components/ImpactLoopGraphic";
 import { ProgramCards } from "@/components/ProgramCards";
 import { SectionHeader } from "@/components/SectionHeader";
@@ -14,6 +15,7 @@ export const metadata: Metadata = {
 
 export default function HomePage() {
   const featuredGuides = siteContent.library.guides.slice(0, 3);
+  const homeMetrics = [...siteContent.audienceStats, ...siteContent.impactStats.slice(0, 4)];
 
   return (
     <>
@@ -37,6 +39,18 @@ export default function HomePage() {
         </div>
       </Hero>
 
+      <SourceBackedProblemSection />
+
+      <section className="section section-dark">
+        <div className="container">
+          <SectionHeader eyebrow="How BricklabClips helps" title="Attention can become materials.">
+            The audience is already here. The school-materials side is launching with honest metrics that update as requests are funded.
+          </SectionHeader>
+          <ImpactDashboard metrics={homeMetrics} />
+          <p className="small-note">School support metrics start at zero and update only after approved materials are funded and shipped.</p>
+        </div>
+      </section>
+
       <section className="section section-yellow section-tight">
         <div className="container">
           <SectionHeader centered eyebrow="How it works" title="A simple build loop.">
@@ -54,8 +68,6 @@ export default function HomePage() {
           <ProgramCards programs={siteContent.programs} />
         </div>
       </section>
-
-      <SourceBackedProblemSection />
 
       <section className="section">
         <div className="container">
