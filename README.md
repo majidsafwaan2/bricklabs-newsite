@@ -47,4 +47,8 @@ The current asset is `public/images/bricklabs-logo.jpg`. Replace that file or up
 
 ## Loop diagram
 
-The simple build-loop diagram is built with text bubbles in `src/components/ImpactLoopGraphic.tsx` so the text stays crisp and editable.
+The simple build-loop image lives at `public/images/build-loop-bubbles.png` and is rendered by `src/components/ImpactLoopGraphic.tsx`.
+
+## Founder deck
+
+The founder background modal uses `public/docs/founder-deck/page-*.png` and links to `public/docs/founder-stem-advocacy.pdf`.

@@ -19,7 +19,7 @@ export default function SponsorPage() {
         eyebrow="Sponsor"
         title="Help students build."
         description="Partner with BricklabClips to fund robotics, engineering, and creative building materials for schools."
-        actions={[{ label: "Start a Sponsor Conversation", href: "#sponsor-inquiry", variant: "dark" }]}
+        actions={[{ label: "Contact BricklabClips", href: "#sponsor-inquiry", variant: "dark" }]}
       />
 
       <section className="section section-yellow">
@@ -55,8 +55,7 @@ export default function SponsorPage() {
             </ul>
           </div>
           <div id="sponsor-inquiry" className="form-panel">
-            <h2>Sponsor conversation</h2>
-            <p>Tell us what you want to support. We&apos;ll schedule a call and agree on scope before launch.</p>
+            <p>Send a quick note. We&apos;ll schedule a call and agree on scope before launch.</p>
             <SponsorInquiryForm />
           </div>
         </div>

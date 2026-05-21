@@ -21,9 +21,7 @@ export const siteContent = {
       "Build ideas, school materials, and student creations from the BricklabClips community.",
     logoPath: "/images/bricklabs-logo.jpg",
     tiktokUrl: "https://www.tiktok.com/",
-    siteUrl: process.env.NEXT_PUBLIC_SITE_URL || "https://bricklabclips.org",
-    founderAwardEnabled: false,
-    founderAwardLine: "2024 VEX Robotics International STEM Advocacy Award recipient."
+    siteUrl: process.env.NEXT_PUBLIC_SITE_URL || "https://bricklabclips.org"
   },
   navLinks: [
     { label: "Library", href: "/library" },
@@ -50,36 +48,36 @@ export const siteContent = {
   ],
   problemSources: [
     {
-      label: "Technology and engineering offerings",
-      fact:
-        "Technology and engineering activities were available in 39% of afterschool programs in 2020.",
-      source: "Afterschool Alliance, America After 3PM STEM Report",
+      label: "39%",
+      title: "Afterschool programs with tech and engineering",
+      fact: "Only 39% of afterschool programs offered technology and engineering activities in 2020.",
+      source: "America After 3PM STEM Report",
       href: "https://afterschoolalliance.org/documents/AA3PM/AA3PM-STEM-Report-2021.pdf"
     },
     {
-      label: "Income gap in access",
-      fact:
-        "Parents in the lowest-income bracket reported less access: 27% compared with 44% in the highest-income bracket.",
-      source: "Afterschool Alliance, America After 3PM STEM Report",
+      label: "27% vs 44%",
+      title: "Income gap in hands-on activities",
+      fact: "Parents in the lowest-income bracket reported technology and engineering activities at 27%, compared with 44% in the highest-income bracket.",
+      source: "America After 3PM STEM Report",
       href: "https://afterschoolalliance.org/documents/AA3PM/AA3PM-STEM-Report-2021.pdf"
     },
     {
-      label: "Rural STEM materials barrier",
-      fact:
-        "GAO identified limited STEM materials as a rural barrier and highlighted shipping materials, including robotics parts, to schools.",
-      source: "U.S. Government Accountability Office, GAO-25-107371",
-      href: "https://www.gao.gov/products/gao-25-107371"
+      label: "80%",
+      title: "Virginia afterschool demand",
+      fact: "In Virginia, 80% of youth are missing out on attending an afterschool program.",
+      source: "VPOST Virginia After 3PM",
+      href: "https://v-post.org/virginia-after-3pm/"
     },
     {
-      label: "Title I targeting",
-      fact:
-        "U.S. Department of Education Title I guidance says LEAs target Title I funds to schools with the highest percentages of children from low-income families.",
-      source: "U.S. Department of Education, Title I Part A",
-      href: "https://www.ed.gov/grants-and-programs/formula-grants/school-improvement-grants/title-i-part-improving-basic-programs-operated-local-educational-agencies"
+      label: "Nearly 500",
+      title: "Local student interest",
+      fact: "Nearly 500 elementary and middle school students from 15 Loudoun County schools joined a robotics/STEM Innovation Day.",
+      source: "Loudoun County Public Schools",
+      href: "https://www.lcps.org/o/lcps/article/2837213"
     }
   ],
   loopSummary:
-    "The model is simple: use attention from builds to fund materials, then turn those materials into more student builds.",
+    "Build videos create attention. Sponsor support helps turn that attention into materials schools can use.",
   loopSteps: [
     {
       title: "Watch builds",
@@ -348,7 +346,6 @@ export const siteContent = {
   },
   forms: {
     sponsorInterestOptions: ["cash", "in-kind parts", "prizes", "shipping", "other"],
-    budgetRanges: ["Under $1,000", "$1,000-$5,000", "$5,000-$10,000", "$10,000+", "Unsure"],
     titleIOptions: ["yes", "no", "unsure"],
     programTypes: ["class", "robotics team", "club", "library", "afterschool", "other"],
     yesNoUnsureOptions: ["yes", "no", "unsure"],
