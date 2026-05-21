@@ -36,9 +36,6 @@ export const sponsorInquirySchema = z.object({
   email: z.string().trim().email("Enter a valid email address."),
   website: optionalUrl(),
   sponsorInterest: requiredText("Sponsor interest", 80),
-  estimatedBudgetRange: optionalText(80),
-  whatTheyWantToSupport: requiredText("What you want to support"),
-  timeline: optionalText(160),
   message: optionalText(),
   consent: z.boolean().refine(Boolean, "Consent is required.")
 });
@@ -218,4 +215,3 @@ export async function handleFormSubmission({
     return NextResponse.json({ message: "The form could not be sent. Please try again later." }, { status: 502 });
   }
 }
-

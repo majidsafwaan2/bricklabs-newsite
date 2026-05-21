@@ -44,14 +44,10 @@ Each guide supports:
 
 Use `status: "draft"` for starter drafts, `status: "coming-soon"` for placeholders, and `status: "published"` only after the guide has been written, checked, and linked to your own demo or video.
 
+When you send the BricklabClips TikTok video list, paste each video URL into the matching guide's `videoUrl` field.
+
 Do not copy official LEGO instructions, official imagery, official packaging, or proprietary assets. Use original builds, original photos/video, or neutral diagrams.
 
-## Founder award line
+## Founder background deck
 
-If proof is available and you want the award shown, set:
-
-```ts
-founderAwardEnabled: true
-```
-
-in `siteContent.brand`.
+The founder background modal uses slide images in `public/docs/founder-deck/` and keeps `public/docs/founder-stem-advocacy.pdf` as the full PDF link. Replace both if you update the slideshow later.

@@ -133,10 +133,7 @@ export function SponsorInquiryForm() {
         <Field label="Email" name="email" type="email" required />
         <Field label="Website" name="website" type="url" placeholder="https://example.com" />
         <SelectField label="Sponsor interest" name="sponsorInterest" options={siteContent.forms.sponsorInterestOptions} required />
-        <SelectField label="Estimated budget range" name="estimatedBudgetRange" options={siteContent.forms.budgetRanges} />
-        <Field label="Timeline" name="timeline" placeholder="Example: summer 2026" />
-        <TextArea label="What do you want to support?" name="whatTheyWantToSupport" required />
-        <TextArea label="Message" name="message" rows={5} />
+        <TextArea label="Message" name="message" rows={5} placeholder="Tell us a little about your company and what kind of support sounds interesting." />
         <label className="checkbox-row full-span">
           <input name="consent" type="checkbox" required />
           <span>I understand BricklabClips will follow up to schedule a call.</span>
