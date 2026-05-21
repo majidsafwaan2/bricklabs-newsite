@@ -16,7 +16,7 @@ export type LibraryGuide = {
 
 export const siteContent = {
   brand: {
-    name: "BricklabClips",
+    name: "BrickLabClips",
     shortDescription:
       "Build ideas, school materials, and student creations from the BricklabClips community.",
     logoPath: "/images/bricklabs-logo.jpg",
@@ -24,6 +24,7 @@ export const siteContent = {
     siteUrl: process.env.NEXT_PUBLIC_SITE_URL || "https://bricklabclips.org"
   },
   navLinks: [
+    { label: "Home", href: "/" },
     { label: "Library", href: "/library" },
     { label: "Build Challenge", href: "/hackathon" },
     { label: "Sponsor", href: "/sponsor" },
