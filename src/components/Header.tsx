@@ -24,6 +24,7 @@ export function Header() {
       <div className="nav-wrap">
         <Link className="brand-link" href="/" aria-label="BricklabClips home" onClick={closeMenu}>
           <Image src={siteContent.brand.logoPath} alt="BricklabClips logo." width={974} height={974} priority />
+          <span>{siteContent.brand.name}</span>
         </Link>
         <nav className="desktop-nav" aria-label="Primary navigation">
           {siteContent.navLinks.map((link) => (

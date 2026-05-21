@@ -136,7 +136,13 @@ textarea {
 .brand-link {
   display: inline-flex;
   align-items: center;
+  gap: 10px;
   flex: 0 0 auto;
+  color: var(--ink);
+  font-family: var(--font-display);
+  font-size: clamp(1.05rem, 1.7vw, 1.42rem);
+  font-weight: 900;
+  line-height: 1;
   text-decoration: none;
 }
 
@@ -1553,6 +1559,10 @@ section[id] {
   .brand-link img {
     width: 52px;
     height: 52px;
+  }
+
+  .brand-link span {
+    font-size: 1.08rem;
   }
 
   .hero h1,
