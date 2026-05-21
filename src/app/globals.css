@@ -707,9 +707,10 @@ section[id] {
 
 .founder-layout {
   display: grid;
-  grid-template-columns: minmax(240px, 0.42fr) minmax(0, 0.58fr);
+  grid-template-columns: minmax(240px, 0.34fr) minmax(0, 0.66fr);
   gap: 44px;
   align-items: center;
+  max-width: 1040px;
 }
 
 .founder-photo-placeholder {
@@ -734,7 +735,7 @@ section[id] {
 }
 
 .founder-copy {
-  max-width: 680px;
+  max-width: 760px;
 }
 
 .founder-copy h2 {
@@ -745,7 +746,8 @@ section[id] {
 
 .founder-copy p:not(.eyebrow) {
   color: var(--ink-soft);
-  font-size: 1.08rem;
+  font-size: clamp(1.14rem, 1.55vw, 1.42rem);
+  line-height: 1.62;
 }
 
 .founder-copy .button {
