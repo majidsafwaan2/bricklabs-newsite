@@ -1,0 +1,3002 @@
+[
+  {
+    "slug": "gear-ratio-demonstrator",
+    "title": "Gear Ratio Demonstrator",
+    "category": "Brick-compatible mechanisms",
+    "input": "clockwise hand-crank rotation",
+    "output": "slower counterclockwise axle rotation",
+    "motion": "rotary-to-rotary",
+    "parts": [
+      "12-tooth brick-compatible gear",
+      "36-tooth brick-compatible gear",
+      "straight axles, at least 5 modules long"
+    ],
+    "steps": [
+      "Build a rigid base",
+      "Raise the input supports",
+      "Install the small driver"
+    ],
+    "losses": [
+      "axle friction",
+      "gear-tooth rubbing",
+      "frame flex"
+    ],
+    "builderMoment": "When the ratio is correct but the axle is emotionally diagonal."
+  },
+  {
+    "slug": "compound-gear-train",
+    "title": "Compound Gear Train",
+    "category": "Brick-compatible mechanisms",
+    "input": "clockwise hand-crank rotation",
+    "output": "slow clockwise shaft rotation",
+    "motion": "rotary-to-rotary through two stages",
+    "parts": [
+      "rigid brick-compatible frame elements",
+      "straight axles or pivot pins in assorted lengths",
+      "bushings, collars, or spacers"
+    ],
+    "steps": [
+      "Build the ladder frame",
+      "Install the input shaft",
+      "Place the middle shaft"
+    ],
+    "losses": [
+      "four gear meshes",
+      "axle friction",
+      "middle-shaft flex"
+    ],
+    "builderMoment": "You wanted nine-to-one. The frame wanted interpretive dance."
+  },
+  {
+    "slug": "idler-gear-direction-reverser",
+    "title": "Idler Gear Direction Reverser",
+    "category": "Brick-compatible mechanisms",
+    "input": "clockwise rotation of the first gear",
+    "output": "clockwise rotation of the final gear",
+    "motion": "rotary-to-rotary with direction restoration",
+    "parts": [
+      "rigid brick-compatible frame elements",
+      "straight axles or pivot pins in assorted lengths",
+      "bushings, collars, or spacers"
+    ],
+    "steps": [
+      "Square a three-shaft frame",
+      "Mount the input gear",
+      "Position the idler"
+    ],
+    "losses": [
+      "two tooth meshes",
+      "idler axle friction",
+      "loose spacing"
+    ],
+    "builderMoment": "The idler contributes direction, spacing, and absolutely no ratio drama."
+  },
+  {
+    "slug": "bevel-gear-90-degree-drive",
+    "title": "Bevel Gear 90-Degree Drive",
+    "category": "Brick-compatible mechanisms",
+    "input": "horizontal hand-crank rotation",
+    "output": "vertical shaft rotation",
+    "motion": "rotary-to-rotary through 90 degrees",
+    "parts": [
+      "rigid brick-compatible frame elements",
+      "straight axles or pivot pins in assorted lengths",
+      "bushings, collars, or spacers"
+    ],
+    "steps": [
+      "Build the horizontal base",
+      "Raise the vertical tower",
+      "Install the input shaft"
+    ],
+    "losses": [
+      "bevel-tooth sliding",
+      "axial gear thrust",
+      "frame flex"
+    ],
+    "builderMoment": "The shafts are at ninety degrees. The builder is at ninety-seven percent confidence."
+  },
+  {
+    "slug": "worm-gear-winch",
+    "title": "Worm Gear Winch",
+    "category": "Brick-compatible mechanisms",
+    "input": "rotation of a horizontal worm shaft",
+    "output": "slow rotation of a lifting drum",
+    "motion": "rotary-to-rotary at right angles",
+    "parts": [
+      "rigid brick-compatible frame elements",
+      "straight axles or pivot pins in assorted lengths",
+      "bushings, collars, or spacers"
+    ],
+    "steps": [
+      "Build a wide base",
+      "Support the worm shaft",
+      "Mesh the worm wheel"
+    ],
+    "losses": [
+      "sliding tooth friction",
+      "drum bearing friction",
+      "string rubbing"
+    ],
+    "builderMoment": "Twenty-four crank turns later, the cup has achieved personal growth."
+  },
+  {
+    "slug": "rack-and-pinion-slider",
+    "title": "Rack-and-Pinion Slider",
+    "category": "Brick-compatible mechanisms",
+    "input": "rotation of a pinion gear",
+    "output": "horizontal rack translation",
+    "motion": "rotary-to-linear",
+    "parts": [
+      "rigid brick-compatible frame elements",
+      "straight axles or pivot pins in assorted lengths",
+      "bushings, collars, or spacers"
+    ],
+    "steps": [
+      "Build the long base",
+      "Make the lower guide",
+      "Install the pinion shaft"
+    ],
+    "losses": [
+      "rack guide rubbing",
+      "tooth friction",
+      "backlash"
+    ],
+    "builderMoment": "The rack was asked to translate. It interpreted that as sideways and upward."
+  },
+  {
+    "slug": "crank-slider-piston",
+    "title": "Crank-Slider Piston",
+    "category": "Brick-compatible mechanisms",
+    "input": "continuous rotation of a crank axle",
+    "output": "back-and-forth piston translation",
+    "motion": "rotary-to-reciprocating linear",
+    "parts": [
+      "rigid brick-compatible frame elements",
+      "straight axles or pivot pins in assorted lengths",
+      "bushings, collars, or spacers"
+    ],
+    "steps": [
+      "Build the crank frame",
+      "Assemble the linear guide",
+      "Make the slider"
+    ],
+    "losses": [
+      "slider rubbing",
+      "pin friction",
+      "rod side force"
+    ],
+    "builderMoment": "At dead center, the piston pauses to reconsider every design decision."
+  },
+  {
+    "slug": "scotch-yoke-oscillator",
+    "title": "Scotch Yoke Oscillator",
+    "category": "Brick-compatible mechanisms",
+    "input": "rotation of an offset crank pin",
+    "output": "straight yoke oscillation",
+    "motion": "rotary-to-reciprocating linear",
+    "parts": [
+      "rigid brick-compatible frame elements",
+      "straight axles or pivot pins in assorted lengths",
+      "bushings, collars, or spacers"
+    ],
+    "steps": [
+      "Build the bearing base",
+      "Set the crank pin",
+      "Assemble the yoke"
+    ],
+    "losses": [
+      "pin-slot sliding",
+      "guide rubbing",
+      "yoke twist"
+    ],
+    "builderMoment": "The pin asked for clearance. The slot offered a personality test."
+  },
+  {
+    "slug": "four-bar-rocker",
+    "title": "Four-Bar Rocker",
+    "category": "Brick-compatible mechanisms",
+    "input": "full rotation of the shortest crank",
+    "output": "limited angular swing of a rocker",
+    "motion": "rotary-to-oscillating angular",
+    "parts": [
+      "rigid brick-compatible frame elements",
+      "straight axles or pivot pins in assorted lengths",
+      "bushings, collars, or spacers"
+    ],
+    "steps": [
+      "Mark two ground pivots",
+      "Attach the short crank",
+      "Attach the rocker"
+    ],
+    "losses": [
+      "pivot friction",
+      "link bending",
+      "poor transmission angle"
+    ],
+    "builderMoment": "Four links, four pivots, fourteen opinions about where the next hole belongs."
+  },
+  {
+    "slug": "parallel-motion-linkage",
+    "title": "Parallel-Motion Linkage",
+    "category": "Brick-compatible mechanisms",
+    "input": "manual rotation of one side link",
+    "output": "a platform that translates while staying level",
+    "motion": "oscillating angular-to-guided translation",
+    "parts": [
+      "rigid brick-compatible frame elements",
+      "straight axles or pivot pins in assorted lengths",
+      "bushings, collars, or spacers"
+    ],
+    "steps": [
+      "Build the fixed ground",
+      "Match the side links",
+      "Attach both arms"
+    ],
+    "losses": [
+      "pivot friction",
+      "unequal link lengths",
+      "joint play"
+    ],
+    "builderMoment": "The platform is level. The two unequal links have entered mediation."
+  },
+  {
+    "slug": "pantograph-drawing-arm",
+    "title": "Pantograph Drawing Arm",
+    "category": "Brick-compatible mechanisms",
+    "input": "hand motion at the tracing pointer",
+    "output": "scaled pencil motion",
+    "motion": "guided planar translation",
+    "parts": [
+      "rigid brick-compatible frame elements",
+      "straight axles or pivot pins in assorted lengths",
+      "bushings, collars, or spacers"
+    ],
+    "steps": [
+      "Prepare the drawing board",
+      "Match four links",
+      "Build the first parallelogram"
+    ],
+    "losses": [
+      "pivot looseness",
+      "link flex",
+      "pencil drag"
+    ],
+    "builderMoment": "The pantograph copied the square and added its own limited-edition corner."
+  },
+  {
+    "slug": "cam-and-follower-lift",
+    "title": "Cam-and-Follower Lift",
+    "category": "Brick-compatible mechanisms",
+    "input": "rotation of a shaped cam",
+    "output": "vertical follower lift",
+    "motion": "rotary-to-reciprocating linear",
+    "parts": [
+      "rigid brick-compatible frame elements",
+      "straight axles or pivot pins in assorted lengths",
+      "bushings, collars, or spacers"
+    ],
+    "steps": [
+      "Build the cam frame",
+      "Mount the cam",
+      "Create the follower"
+    ],
+    "losses": [
+      "sliding contact",
+      "follower side rubbing",
+      "cam wobble"
+    ],
+    "builderMoment": "The follower read the cam profile and left one strongly worded vibration."
+  },
+  {
+    "slug": "eccentric-cam-shaker",
+    "title": "Eccentric Cam Shaker",
+    "category": "Brick-compatible mechanisms",
+    "input": "hand rotation of an off-center mass",
+    "output": "repeating platform vibration",
+    "motion": "rotary-to-oscillating frame motion",
+    "parts": [
+      "rigid brick-compatible frame elements",
+      "straight axles or pivot pins in assorted lengths",
+      "bushings, collars, or spacers"
+    ],
+    "steps": [
+      "Build the low-speed bearing",
+      "Create the moving platform",
+      "Mount the shaker frame"
+    ],
+    "losses": [
+      "bearing friction",
+      "base damping",
+      "loose joints"
+    ],
+    "builderMoment": "The platform is not nervous. It is demonstrating rotating imbalance."
+  },
+  {
+    "slug": "geneva-intermittent-drive",
+    "title": "Geneva Intermittent Drive",
+    "category": "Brick-compatible mechanisms",
+    "input": "continuous rotation of a drive disk",
+    "output": "quarter-turn indexed rotation",
+    "motion": "continuous rotary-to-intermittent rotary",
+    "parts": [
+      "rigid brick-compatible frame elements",
+      "straight axles or pivot pins in assorted lengths",
+      "bushings, collars, or spacers"
+    ],
+    "steps": [
+      "Build a rigid two-shaft base",
+      "Mount the Geneva wheel",
+      "Assemble the drive disk"
+    ],
+    "losses": [
+      "pin-slot impact",
+      "slot rubbing",
+      "axle backlash"
+    ],
+    "builderMoment": "The Geneva drive has two modes: perfect indexing and immediate geometry feedback."
+  },
+  {
+    "slug": "ratchet-and-pawl-winch",
+    "title": "Ratchet-and-Pawl Winch",
+    "category": "Brick-compatible mechanisms",
+    "input": "forward hand-crank rotation",
+    "output": "one-direction drum rotation with holding",
+    "motion": "rotary-to-indexed one-way rotary",
+    "parts": [
+      "rigid brick-compatible frame elements",
+      "straight axles or pivot pins in assorted lengths",
+      "bushings, collars, or spacers"
+    ],
+    "steps": [
+      "Build the winch frame",
+      "Mount drum and ratchet",
+      "Build the pawl lever"
+    ],
+    "losses": [
+      "pawl-tooth impact",
+      "drum friction",
+      "string rubbing"
+    ],
+    "builderMoment": "Every click says progress. Every missed click requests structural review."
+  },
+  {
+    "slug": "one-way-clutch",
+    "title": "One-Way Clutch",
+    "category": "Brick-compatible mechanisms",
+    "input": "rotation of an inner cam",
+    "output": "direction-dependent outer-ring rotation",
+    "motion": "rotary-to-one-way rotary",
+    "parts": [
+      "rigid brick-compatible frame elements",
+      "straight axles or pivot pins in assorted lengths",
+      "bushings, collars, or spacers"
+    ],
+    "steps": [
+      "Build the concentric frame",
+      "Assemble the inner cam",
+      "Fit the rollers"
+    ],
+    "losses": [
+      "roller rubbing",
+      "pocket flex",
+      "unequal preload"
+    ],
+    "builderMoment": "Forward: teamwork. Reverse: everyone suddenly has separate plans."
+  },
+  {
+    "slug": "torque-limiting-slip-clutch",
+    "title": "Torque-Limiting Slip Clutch",
+    "category": "Brick-compatible mechanisms",
+    "input": "hand rotation of a driving disk",
+    "output": "limited-torque rotation of a second disk",
+    "motion": "rotary-to-slip-limited rotary",
+    "parts": [
+      "rigid brick-compatible frame elements",
+      "straight axles or pivot pins in assorted lengths",
+      "bushings, collars, or spacers"
+    ],
+    "steps": [
+      "Build the coaxial support",
+      "Prepare friction faces",
+      "Assemble the disk pair"
+    ],
+    "losses": [
+      "disk rubbing",
+      "uneven pressure",
+      "axle misalignment"
+    ],
+    "builderMoment": "The clutch did not fail. It professionally declined the overload."
+  },
+  {
+    "slug": "open-differential",
+    "title": "Open Differential",
+    "category": "Brick-compatible mechanisms",
+    "input": "rotation of the differential carrier",
+    "output": "two coaxial shafts with variable relative speed",
+    "motion": "one rotary input-to-two rotary outputs",
+    "parts": [
+      "rigid brick-compatible frame elements",
+      "straight axles or pivot pins in assorted lengths",
+      "bushings, collars, or spacers"
+    ],
+    "steps": [
+      "Build the carrier ring",
+      "Mount the side gears",
+      "Install first spider"
+    ],
+    "losses": [
+      "multiple bevel meshes",
+      "carrier friction",
+      "axle rubbing"
+    ],
+    "builderMoment": "The differential divided the motion fairly. Traction was not invited to the meeting."
+  },
+  {
+    "slug": "two-speed-manual-gearbox",
+    "title": "Two-Speed Manual Gearbox",
+    "category": "Brick-compatible mechanisms",
+    "input": "rotation of a common input shaft",
+    "output": "one of two selected output ratios",
+    "motion": "selectable rotary-to-rotary",
+    "parts": [
+      "rigid brick-compatible frame elements",
+      "straight axles or pivot pins in assorted lengths",
+      "bushings, collars, or spacers"
+    ],
+    "steps": [
+      "Build the parallel shaft frame",
+      "Install the input gears",
+      "Fit free output gears"
+    ],
+    "losses": [
+      "four bearing sets",
+      "unused gear drag",
+      "selector rubbing"
+    ],
+    "builderMoment": "The selector found torque, speed, and a surprise third setting called both-at-once."
+  },
+  {
+    "slug": "reversing-gearbox",
+    "title": "Reversing Gearbox",
+    "category": "Brick-compatible mechanisms",
+    "input": "one-direction crank rotation",
+    "output": "selected forward or reverse shaft rotation",
+    "motion": "selectable rotary direction control",
+    "parts": [
+      "rigid brick-compatible frame elements",
+      "straight axles or pivot pins in assorted lengths",
+      "bushings, collars, or spacers"
+    ],
+    "steps": [
+      "Build the fixed-shaft frame",
+      "Mount fixed gears",
+      "Build the idler carriage"
+    ],
+    "losses": [
+      "idler sliding friction",
+      "multiple gear meshes",
+      "selector flex"
+    ],
+    "builderMoment": "Forward worked. Reverse worked. Neutral sent a calendar invite."
+  },
+  {
+    "slug": "belt-drive-transmission",
+    "title": "Belt Drive Transmission",
+    "category": "Brick-compatible mechanisms",
+    "input": "rotation of a driving pulley",
+    "output": "rotation of a distant driven pulley",
+    "motion": "rotary-to-rotary through a flexible loop",
+    "parts": [
+      "rigid brick-compatible frame elements",
+      "straight axles or pivot pins in assorted lengths",
+      "bushings, collars, or spacers"
+    ],
+    "steps": [
+      "Build the fixed input support",
+      "Build a sliding output mount",
+      "Install both pulleys"
+    ],
+    "losses": [
+      "belt slip",
+      "belt bending",
+      "bearing friction"
+    ],
+    "builderMoment": "The belt is centered, tensioned, and still considering a side quest."
+  },
+  {
+    "slug": "chain-drive-transmission",
+    "title": "Chain Drive Transmission",
+    "category": "Brick-compatible mechanisms",
+    "input": "rotation of a driving sprocket",
+    "output": "rotation of a distant driven sprocket",
+    "motion": "rotary-to-rotary through linked chain",
+    "parts": [
+      "rigid brick-compatible frame elements",
+      "straight axles or pivot pins in assorted lengths",
+      "bushings, collars, or spacers"
+    ],
+    "steps": [
+      "Build parallel bearing rails",
+      "Install the sprockets",
+      "Size the chain loop"
+    ],
+    "losses": [
+      "link articulation",
+      "sprocket misalignment",
+      "excess tension"
+    ],
+    "builderMoment": "The chain did not slip. It filed a formal derailment instead."
+  },
+  {
+    "slug": "block-and-tackle-hoist",
+    "title": "Block-and-Tackle Hoist",
+    "category": "Brick-compatible mechanisms",
+    "input": "downward pull on the free rope end",
+    "output": "upward movement of a loaded block",
+    "motion": "linear pull-to-slower linear lift",
+    "parts": [
+      "rigid brick-compatible frame elements",
+      "straight axles or pivot pins in assorted lengths",
+      "bushings, collars, or spacers"
+    ],
+    "steps": [
+      "Build the overhead frame",
+      "Assemble the fixed block",
+      "Assemble the moving block"
+    ],
+    "losses": [
+      "pulley bearing friction",
+      "rope bending",
+      "side rubbing"
+    ],
+    "builderMoment": "The force went down. The rope length found new ambitions."
+  },
+  {
+    "slug": "universal-joint",
+    "title": "Universal Joint",
+    "category": "Brick-compatible mechanisms",
+    "input": "rotation of one angled shaft",
+    "output": "rotation of a second intersecting shaft",
+    "motion": "rotary-to-rotary across an angle",
+    "parts": [
+      "rigid brick-compatible frame elements",
+      "straight axles or pivot pins in assorted lengths",
+      "bushings, collars, or spacers"
+    ],
+    "steps": [
+      "Build two shaft towers",
+      "Assemble the cross",
+      "Build matching yokes"
+    ],
+    "losses": [
+      "cross-pin friction",
+      "yoke flex",
+      "shaft misalignment"
+    ],
+    "builderMoment": "The shafts found common ground. Technically, it was a common intersection point."
+  },
+  {
+    "slug": "oldham-coupling",
+    "title": "Oldham Coupling",
+    "category": "Brick-compatible mechanisms",
+    "input": "rotation of one offset shaft hub",
+    "output": "rotation of a parallel displaced shaft",
+    "motion": "rotary-to-rotary with lateral sliding",
+    "parts": [
+      "rigid brick-compatible frame elements",
+      "straight axles or pivot pins in assorted lengths",
+      "bushings, collars, or spacers"
+    ],
+    "steps": [
+      "Build offset shaft towers",
+      "Assemble the input hub",
+      "Assemble the output hub"
+    ],
+    "losses": [
+      "tongue-slot sliding",
+      "disk inertia",
+      "hub wobble"
+    ],
+    "builderMoment": "The shafts missed each other completely and still completed the assignment."
+  },
+  {
+    "slug": "flexible-beam-coupling",
+    "title": "Flexible Beam Coupling",
+    "category": "Brick-compatible mechanisms",
+    "input": "rotation and slight displacement of one shaft",
+    "output": "compliant rotation of a second shaft",
+    "motion": "rotary-to-rotary through elastic bending",
+    "parts": [
+      "rigid brick-compatible frame elements",
+      "straight axles or pivot pins in assorted lengths",
+      "bushings, collars, or spacers"
+    ],
+    "steps": [
+      "Build adjustable towers",
+      "Assemble the input hub",
+      "Assemble the output hub"
+    ],
+    "losses": [
+      "material hysteresis",
+      "beam rubbing",
+      "hub play"
+    ],
+    "builderMoment": "Flexible enough to forgive alignment. Not flexible enough to forgive everything."
+  },
+  {
+    "slug": "lead-screw-linear-actuator",
+    "title": "Lead-Screw Linear Actuator",
+    "category": "Brick-compatible mechanisms",
+    "input": "rotation of a threaded shaft",
+    "output": "guided carriage translation",
+    "motion": "rotary-to-linear",
+    "parts": [
+      "rigid brick-compatible frame elements",
+      "straight axles or pivot pins in assorted lengths",
+      "bushings, collars, or spacers"
+    ],
+    "steps": [
+      "Build the long guide base",
+      "Support the screw",
+      "Capture the follower nut"
+    ],
+    "losses": [
+      "thread sliding friction",
+      "guide rubbing",
+      "shaft bowing"
+    ],
+    "builderMoment": "Precise linear motion, delivered one extremely patient turn at a time."
+  },
+  {
+    "slug": "toggle-clamp",
+    "title": "Toggle Clamp",
+    "category": "Brick-compatible mechanisms",
+    "input": "rotation of a long handle link",
+    "output": "short linear motion of a clamp pad",
+    "motion": "angular-to-near-linear clamping",
+    "parts": [
+      "rigid brick-compatible frame elements",
+      "straight axles or pivot pins in assorted lengths",
+      "bushings, collars, or spacers"
+    ],
+    "steps": [
+      "Build the clamp base",
+      "Guide the clamp pad",
+      "Attach the front toggle"
+    ],
+    "losses": [
+      "pivot friction",
+      "link flex",
+      "pad compression"
+    ],
+    "builderMoment": "The toggle crossed center and immediately became extremely committed."
+  },
+  {
+    "slug": "over-center-latch",
+    "title": "Over-Center Latch",
+    "category": "Brick-compatible mechanisms",
+    "input": "rotation of a latch handle",
+    "output": "tension pulling two panels together",
+    "motion": "angular-to-short linear pull",
+    "parts": [
+      "rigid brick-compatible frame elements",
+      "straight axles or pivot pins in assorted lengths",
+      "bushings, collars, or spacers"
+    ],
+    "steps": [
+      "Hinge the test panels",
+      "Mount the fixed catch",
+      "Build the handle base"
+    ],
+    "losses": [
+      "pivot friction",
+      "link stretch",
+      "mount flex"
+    ],
+    "builderMoment": "Five degrees past center: the tiny distance between loose and absolutely not opening."
+  },
+  {
+    "slug": "parallel-jaw-gripper",
+    "title": "Parallel-Jaw Gripper",
+    "category": "Brick-compatible mechanisms",
+    "input": "rotation of a central handle or gear",
+    "output": "equal inward translation of two jaws",
+    "motion": "rotary-to-symmetric linear",
+    "parts": [
+      "rigid brick-compatible frame elements",
+      "straight axles or pivot pins in assorted lengths",
+      "bushings, collars, or spacers"
+    ],
+    "steps": [
+      "Build the symmetric base",
+      "Make matched carriages",
+      "Attach parallel jaw faces"
+    ],
+    "losses": [
+      "guide friction",
+      "link asymmetry",
+      "jaw flex"
+    ],
+    "builderMoment": "Both jaws moved equally, which is more coordination than most group projects."
+  },
+  {
+    "slug": "linkage-grabber-arm",
+    "title": "Linkage Grabber Arm",
+    "category": "Brick-compatible mechanisms",
+    "input": "squeezing motion at two handles",
+    "output": "closing motion at remote jaws",
+    "motion": "angular hand input-to-angular jaw output",
+    "parts": [
+      "rigid brick-compatible frame elements",
+      "straight axles or pivot pins in assorted lengths",
+      "bushings, collars, or spacers"
+    ],
+    "steps": [
+      "Build two stiff rails",
+      "Join the arm frame",
+      "Mount handle levers"
+    ],
+    "losses": [
+      "long-link flex",
+      "pivot friction",
+      "joint play"
+    ],
+    "builderMoment": "The grabber reached forty centimeters and immediately developed long-distance opinions."
+  },
+  {
+    "slug": "walking-beam-mechanism",
+    "title": "Walking Beam Mechanism",
+    "category": "Brick-compatible mechanisms",
+    "input": "rotation of a crank and connecting rod",
+    "output": "rocking beam motion",
+    "motion": "rotary-to-oscillating angular",
+    "parts": [
+      "rigid brick-compatible frame elements",
+      "straight axles or pivot pins in assorted lengths",
+      "bushings, collars, or spacers"
+    ],
+    "steps": [
+      "Build the center tower",
+      "Balance the beam",
+      "Build the crank support"
+    ],
+    "losses": [
+      "center-pivot friction",
+      "rod side force",
+      "beam flex"
+    ],
+    "builderMoment": "One end went up, the other went down, and the tower took it personally."
+  },
+  {
+    "slug": "theo-jansen-leg-module",
+    "title": "Theo Jansen Leg Module",
+    "category": "Brick-compatible mechanisms",
+    "input": "rotation of one crank pivot",
+    "output": "closed foot trajectory",
+    "motion": "rotary-to-complex planar path",
+    "parts": [
+      "rigid brick-compatible frame elements",
+      "straight axles or pivot pins in assorted lengths",
+      "bushings, collars, or spacers"
+    ],
+    "steps": [
+      "Choose and label dimensions",
+      "Build the ground frame",
+      "Install the crank link"
+    ],
+    "losses": [
+      "many pivot joints",
+      "link flex",
+      "plane interference"
+    ],
+    "builderMoment": "Nine links agreed on a foot path. The tenth link requested revisions."
+  },
+  {
+    "slug": "chebyshev-walking-linkage",
+    "title": "Chebyshev Walking Linkage",
+    "category": "Brick-compatible mechanisms",
+    "input": "rotation of a short crank",
+    "output": "foot point with near-straight stance motion",
+    "motion": "rotary-to-planar walking path",
+    "parts": [
+      "rigid brick-compatible frame elements",
+      "straight axles or pivot pins in assorted lengths",
+      "bushings, collars, or spacers"
+    ],
+    "steps": [
+      "Prepare the proportion set",
+      "Build the ground base",
+      "Attach the input crank"
+    ],
+    "losses": [
+      "pivot clearance",
+      "link flex",
+      "frame movement"
+    ],
+    "builderMoment": "It is an approximate straight line, which is engineering for confidently almost straight."
+  },
+  {
+    "slug": "peaucellier-straight-line-linkage",
+    "title": "Peaucellier Straight-Line Linkage",
+    "category": "Brick-compatible mechanisms",
+    "input": "guided arc motion at one linkage point",
+    "output": "straight-line tracer motion",
+    "motion": "oscillating angular-to-linear path",
+    "parts": [
+      "rigid brick-compatible frame elements",
+      "straight axles or pivot pins in assorted lengths",
+      "bushings, collars, or spacers"
+    ],
+    "steps": [
+      "Prepare matched links",
+      "Build the fixed base",
+      "Assemble the rhombus"
+    ],
+    "losses": [
+      "eight pivot joints",
+      "rhombus distortion",
+      "link-plane collisions"
+    ],
+    "builderMoment": "Eight links produced a straight line because apparently a ruler was too direct."
+  },
+  {
+    "slug": "rack-steering-with-ackermann-approximation",
+    "title": "Rack Steering with Ackermann Approximation",
+    "category": "Brick-compatible mechanisms",
+    "input": "rotation of a steering pinion",
+    "output": "unequal left and right wheel pivot angles",
+    "motion": "rotary-to-linear-to-angular",
+    "parts": [
+      "rigid brick-compatible frame elements",
+      "straight axles or pivot pins in assorted lengths",
+      "bushings, collars, or spacers"
+    ],
+    "steps": [
+      "Build the chassis rectangle",
+      "Mount the kingpins",
+      "Build steering knuckles"
+    ],
+    "losses": [
+      "rack friction",
+      "tie-rod play",
+      "kingpin friction"
+    ],
+    "builderMoment": "The inner wheel understood the assignment. The outer wheel needed the turning-center diagram."
+  },
+  {
+    "slug": "independent-suspension-module",
+    "title": "Independent Suspension Module",
+    "category": "Brick-compatible mechanisms",
+    "input": "vertical force at one wheel",
+    "output": "guided wheel travel and spring deflection",
+    "motion": "linear force-to-constrained arc motion",
+    "parts": [
+      "rigid brick-compatible frame elements",
+      "straight axles or pivot pins in assorted lengths",
+      "bushings, collars, or spacers"
+    ],
+    "steps": [
+      "Build the chassis wall",
+      "Install lower arms",
+      "Install upper arms"
+    ],
+    "losses": [
+      "pivot friction",
+      "spring hysteresis",
+      "arm flex"
+    ],
+    "builderMoment": "Independent suspension: the wheel handles its own problems, mostly."
+  },
+  {
+    "slug": "escapement-mechanism",
+    "title": "Escapement Mechanism",
+    "category": "Brick-compatible mechanisms",
+    "input": "slow torque from a small falling mass",
+    "output": "tooth-by-tooth escape-wheel rotation",
+    "motion": "stored energy-to-intermittent rotary",
+    "parts": [
+      "rigid brick-compatible frame elements",
+      "straight axles or pivot pins in assorted lengths",
+      "bushings, collars, or spacers"
+    ],
+    "steps": [
+      "Build the tall frame",
+      "Mount the escape wheel",
+      "Build the anchor"
+    ],
+    "losses": [
+      "pallet impact",
+      "pivot friction",
+      "air damping"
+    ],
+    "builderMoment": "Tick, tock, adjust, repeat: precision with a soundtrack."
+  },
+  {
+    "slug": "mechanical-counter",
+    "title": "Mechanical Counter",
+    "category": "Brick-compatible mechanisms",
+    "input": "one controlled lever press",
+    "output": "indexed ones and tens number wheels",
+    "motion": "reciprocating input-to-intermittent rotary",
+    "parts": [
+      "rigid brick-compatible frame elements",
+      "straight axles or pivot pins in assorted lengths",
+      "bushings, collars, or spacers"
+    ],
+    "steps": [
+      "Build the counter frame",
+      "Assemble the ones wheel",
+      "Build the input lever"
+    ],
+    "losses": [
+      "pawl friction",
+      "wheel backlash",
+      "carry-pin impact"
+    ],
+    "builderMoment": "It counted to ten perfectly and celebrated by counting eleven twice."
+  },
+  {
+    "slug": "mechanical-and-gate",
+    "title": "Mechanical AND Gate",
+    "category": "Brick-compatible mechanisms",
+    "input": "two independent binary lever positions",
+    "output": "one permitted slider position",
+    "motion": "two angular inputs-to-binary linear output",
+    "parts": [
+      "rigid brick-compatible frame elements",
+      "straight axles or pivot pins in assorted lengths",
+      "bushings, collars, or spacers"
+    ],
+    "steps": [
+      "Build the output guide",
+      "Install blocker A",
+      "Install blocker B"
+    ],
+    "losses": [
+      "slider friction",
+      "lever backlash",
+      "blocker flex"
+    ],
+    "builderMoment": "Input A said yes. Input B said no. The output respected the meeting rules."
+  },
+  {
+    "slug": "bistable-flip-flop-mechanism",
+    "title": "Bistable Flip-Flop Mechanism",
+    "category": "Brick-compatible mechanisms",
+    "input": "separate set and reset lever pushes",
+    "output": "one stored two-position flag",
+    "motion": "reciprocating inputs-to-bistable angular output",
+    "parts": [
+      "rigid brick-compatible frame elements",
+      "straight axles or pivot pins in assorted lengths",
+      "bushings, collars, or spacers"
+    ],
+    "steps": [
+      "Build the rocker frame",
+      "Create over-center bias",
+      "Mark stable states"
+    ],
+    "losses": [
+      "pivot friction",
+      "spring hysteresis",
+      "stop flex"
+    ],
+    "builderMoment": "The mechanism remembered one bit, which is one more than the builder after cleanup."
+  },
+  {
+    "slug": "low-speed-centrifugal-governor",
+    "title": "Low-Speed Centrifugal Governor",
+    "category": "Brick-compatible mechanisms",
+    "input": "low-speed rotation of a vertical spindle",
+    "output": "radial mass motion and vertical pointer rise",
+    "motion": "rotary speed-to-radial and linear displacement",
+    "parts": [
+      "rigid brick-compatible frame elements",
+      "straight axles or pivot pins in assorted lengths",
+      "bushings, collars, or spacers"
+    ],
+    "steps": [
+      "Build the guarded tower",
+      "Make matched upper arms",
+      "Attach equal soft masses"
+    ],
+    "losses": [
+      "hinge friction",
+      "air drag",
+      "mass imbalance"
+    ],
+    "builderMoment": "The governor requested more speed. The safety guard declined."
+  },
+  {
+    "slug": "flywheel-energy-smoother",
+    "title": "Flywheel Energy Smoother",
+    "category": "Brick-compatible mechanisms",
+    "input": "uneven hand-crank torque",
+    "output": "steadier shaft rotation",
+    "motion": "rotary input-to-smoothed rotary output",
+    "parts": [
+      "rigid brick-compatible frame elements",
+      "straight axles or pivot pins in assorted lengths",
+      "bushings, collars, or spacers"
+    ],
+    "steps": [
+      "Build a rigid bearing frame",
+      "Balance the bare disk",
+      "Add symmetric rim masses"
+    ],
+    "losses": [
+      "bearing friction",
+      "air drag",
+      "axle wobble"
+    ],
+    "builderMoment": "The flywheel smoothed the motion and made stopping a scheduled event."
+  },
+  {
+    "slug": "planetary-gearset",
+    "title": "Planetary Gearset",
+    "category": "Brick-compatible mechanisms",
+    "input": "selected rotation of sun, ring, or carrier",
+    "output": "selected concentric member rotation",
+    "motion": "multi-path rotary-to-rotary",
+    "parts": [
+      "rigid brick-compatible frame elements",
+      "straight axles or pivot pins in assorted lengths",
+      "bushings, collars, or spacers"
+    ],
+    "steps": [
+      "Build the concentric frame",
+      "Mount the sun gear",
+      "Build the carrier"
+    ],
+    "losses": [
+      "multiple planet meshes",
+      "carrier flex",
+      "unequal planet spacing"
+    ],
+    "builderMoment": "The planets aligned. The gear phases entered a lengthy diplomatic process."
+  },
+  {
+    "slug": "differential-steer-rover-chassis",
+    "title": "Differential-Steer Rover Chassis",
+    "category": "Brick-compatible mechanisms",
+    "input": "independent left and right wheel rotation",
+    "output": "forward, curved, or pivoting chassis motion",
+    "motion": "two rotary inputs-to-planar vehicle motion",
+    "parts": [
+      "rigid brick-compatible frame elements",
+      "straight axles or pivot pins in assorted lengths",
+      "bushings, collars, or spacers"
+    ],
+    "steps": [
+      "Square the chassis",
+      "Install independent axles",
+      "Match the drive wheels"
+    ],
+    "losses": [
+      "wheel slip",
+      "axle friction",
+      "unequal wheel diameter"
+    ],
+    "builderMoment": "Equal commands, unequal wheels, one rover with strong directional preferences."
+  },
+  {
+    "slug": "cardboard-arcade-button",
+    "title": "Cardboard Arcade Button",
+    "category": "Cardboard builds",
+    "input": "downward hand press on the cap",
+    "output": "momentary low-voltage electrical contact",
+    "motion": "linear press-to-binary switch state",
+    "parts": [
+      "corrugated cardboard panels about 3-5 mm thick",
+      "masking or paper tape",
+      "washable school glue or low-temperature hot glue"
+    ],
+    "steps": [
+      "Cut the button box",
+      "Create the top guide",
+      "Build the moving cap"
+    ],
+    "losses": [
+      "guide rubbing",
+      "spring fatigue",
+      "foil wrinkles"
+    ],
+    "builderMoment": "The button was pressed. The foil requested a cleaner meeting surface."
+  },
+  {
+    "slug": "cardboard-pinball-machine",
+    "title": "Cardboard Pinball Machine",
+    "category": "Cardboard builds",
+    "input": "plunger release and hand-operated flippers",
+    "output": "controlled marble motion through a sloped field",
+    "motion": "linear and angular inputs-to-rolling projectile path",
+    "parts": [
+      "corrugated cardboard panels about 3-5 mm thick",
+      "masking or paper tape",
+      "washable school glue or low-temperature hot glue"
+    ],
+    "steps": [
+      "Set the playfield slope",
+      "Build perimeter walls",
+      "Make the launch lane"
+    ],
+    "losses": [
+      "rolling friction",
+      "wall impacts",
+      "flipper flex"
+    ],
+    "builderMoment": "The marble found the one gap nobody remembered designing."
+  },
+  {
+    "slug": "cardboard-claw-machine",
+    "title": "Cardboard Claw Machine",
+    "category": "Cardboard builds",
+    "input": "hand sliders and a winding crank",
+    "output": "positioned claw lift and release",
+    "motion": "two linear axes plus vertical hoist",
+    "parts": [
+      "corrugated cardboard panels about 3-5 mm thick",
+      "masking or paper tape",
+      "washable school glue or low-temperature hot glue"
+    ],
+    "steps": [
+      "Build the enclosure",
+      "Install the X rails",
+      "Build the X carriage"
+    ],
+    "losses": [
+      "carriage rubbing",
+      "string twist",
+      "claw flex"
+    ],
+    "builderMoment": "The claw reached the prize, closed perfectly, and selected the air beside it."
+  },
+  {
+    "slug": "cardboard-foosball-table",
+    "title": "Cardboard Foosball Table",
+    "category": "Cardboard builds",
+    "input": "hand rotation and translation of player rods",
+    "output": "redirected ball motion",
+    "motion": "combined rotary-linear control-to-rolling ball",
+    "parts": [
+      "corrugated cardboard panels about 3-5 mm thick",
+      "masking or paper tape",
+      "washable school glue or low-temperature hot glue"
+    ],
+    "steps": [
+      "Build the field tray",
+      "Mark rod heights",
+      "Reinforce bearing holes"
+    ],
+    "losses": [
+      "rod-hole rubbing",
+      "player imbalance",
+      "floor seams"
+    ],
+    "builderMoment": "The ball escaped every defender and was stopped by one very committed corner."
+  },
+  {
+    "slug": "cardboard-coin-sorter",
+    "title": "Cardboard Coin Sorter",
+    "category": "Cardboard builds",
+    "input": "gravity-driven rolling coins",
+    "output": "diameter-separated collection bins",
+    "motion": "rolling translation-to-sorted drop",
+    "parts": [
+      "corrugated cardboard panels about 3-5 mm thick",
+      "masking or paper tape",
+      "washable school glue or low-temperature hot glue"
+    ],
+    "steps": [
+      "Measure the samples",
+      "Build the sloped track",
+      "Mark opening order"
+    ],
+    "losses": [
+      "edge catching",
+      "rolling friction",
+      "coin wobble"
+    ],
+    "builderMoment": "The sorter measured diameter. The coin measured every rough edge."
+  },
+  {
+    "slug": "cardboard-marble-elevator",
+    "title": "Cardboard Marble Elevator",
+    "category": "Cardboard builds",
+    "input": "hand-crank rotation",
+    "output": "repeated upward marble transport",
+    "motion": "rotary input-to-cyclic vertical lift",
+    "parts": [
+      "corrugated cardboard panels about 3-5 mm thick",
+      "masking or paper tape",
+      "washable school glue or low-temperature hot glue"
+    ],
+    "steps": [
+      "Build the tall frame",
+      "Make the drive wheels",
+      "Install top and bottom axles"
+    ],
+    "losses": [
+      "carrier rubbing",
+      "axle friction",
+      "marble bounce"
+    ],
+    "builderMoment": "The elevator transported nine marbles and promoted the tenth to quality assurance."
+  },
+  {
+    "slug": "hand-crank-cardboard-automaton",
+    "title": "Hand-Crank Cardboard Automaton",
+    "category": "Cardboard builds",
+    "input": "hand-crank rotation",
+    "output": "timed character lift or swing",
+    "motion": "rotary-to-reciprocating scenic motion",
+    "parts": [
+      "corrugated cardboard panels about 3-5 mm thick",
+      "masking or paper tape",
+      "washable school glue or low-temperature hot glue"
+    ],
+    "steps": [
+      "Prepare the mechanism box",
+      "Make the crank axle",
+      "Design the cam"
+    ],
+    "losses": [
+      "follower rubbing",
+      "cam wobble",
+      "scenery contact"
+    ],
+    "builderMoment": "The character hit its mark. The cam requested credit as director."
+  },
+  {
+    "slug": "cardboard-periscope",
+    "title": "Cardboard Periscope",
+    "category": "Cardboard builds",
+    "input": "light entering the upper window",
+    "output": "redirected image at the lower viewing window",
+    "motion": "light path redirected by two reflections",
+    "parts": [
+      "corrugated cardboard panels about 3-5 mm thick",
+      "masking or paper tape",
+      "washable school glue or low-temperature hot glue"
+    ],
+    "steps": [
+      "Build the rectangular tube",
+      "Cut viewing windows",
+      "Make 45-degree supports"
+    ],
+    "losses": [
+      "mirror absorption",
+      "misalignment",
+      "small apertures"
+    ],
+    "builderMoment": "The mirrors were both at forty-five degrees, just not the same forty-five degrees."
+  },
+  {
+    "slug": "cardboard-camera-obscura",
+    "title": "Cardboard Camera Obscura",
+    "category": "Cardboard builds",
+    "input": "light rays through a pinhole",
+    "output": "inverted image on a translucent screen",
+    "motion": "light propagation through a small aperture",
+    "parts": [
+      "corrugated cardboard panels about 3-5 mm thick",
+      "masking or paper tape",
+      "washable school glue or low-temperature hot glue"
+    ],
+    "steps": [
+      "Darken the box interior",
+      "Cut the aperture window",
+      "Prepare pinhole foils"
+    ],
+    "losses": [
+      "limited light",
+      "box leaks",
+      "screen scatter"
+    ],
+    "builderMoment": "The image was upside down. Physics confirmed that was the point."
+  },
+  {
+    "slug": "water-hydraulic-cardboard-robot-arm",
+    "title": "Water-Hydraulic Cardboard Robot Arm",
+    "category": "Cardboard builds",
+    "input": "hand force on control syringes",
+    "output": "angular motion at shoulder and elbow joints",
+    "motion": "linear fluid input-to-angular arm motion",
+    "parts": [
+      "corrugated cardboard panels about 3-5 mm thick",
+      "masking or paper tape",
+      "washable school glue or low-temperature hot glue"
+    ],
+    "steps": [
+      "Laminate the base and tower",
+      "Build upper and forearm beams",
+      "Assemble the arm joints"
+    ],
+    "losses": [
+      "air compression",
+      "seal friction",
+      "cardboard flex"
+    ],
+    "builderMoment": "The arm moved smoothly after the last air bubble finally left the project."
+  },
+  {
+    "slug": "cardboard-wind-turbine",
+    "title": "Cardboard Wind Turbine",
+    "category": "Cardboard builds",
+    "input": "moving air from a household fan",
+    "output": "rotor and winding-drum rotation",
+    "motion": "airflow-to-rotary motion",
+    "parts": [
+      "corrugated cardboard panels about 3-5 mm thick",
+      "masking or paper tape",
+      "washable school glue or low-temperature hot glue"
+    ],
+    "steps": [
+      "Build the guarded tower",
+      "Laminate the hub",
+      "Make matched blades"
+    ],
+    "losses": [
+      "bearing friction",
+      "blade flex",
+      "air turbulence"
+    ],
+    "builderMoment": "The turbine found the wind. One blade found a slightly different angle."
+  },
+  {
+    "slug": "cardboard-ferris-wheel",
+    "title": "Cardboard Ferris Wheel",
+    "category": "Cardboard builds",
+    "input": "hand-crank rotation",
+    "output": "rotating rim with gravity-oriented gondolas",
+    "motion": "rotary-to-rotary with free pendulums",
+    "parts": [
+      "corrugated cardboard panels about 3-5 mm thick",
+      "masking or paper tape",
+      "washable school glue or low-temperature hot glue"
+    ],
+    "steps": [
+      "Cut matched wheel sides",
+      "Build straight spokes",
+      "Join the wheel halves"
+    ],
+    "losses": [
+      "axle friction",
+      "rim wobble",
+      "unequal gondola mass"
+    ],
+    "builderMoment": "Five gondolas stayed upright. Number six arrived with a bold new floor plan."
+  },
+  {
+    "slug": "cardboard-spirograph-drawing-machine",
+    "title": "Cardboard Spirograph Drawing Machine",
+    "category": "Cardboard builds",
+    "input": "hand-guided rolling gear motion",
+    "output": "repeating pen curve",
+    "motion": "rotary rolling-to-planar drawing path",
+    "parts": [
+      "corrugated cardboard panels about 3-5 mm thick",
+      "masking or paper tape",
+      "washable school glue or low-temperature hot glue"
+    ],
+    "steps": [
+      "Draw the fixed ring",
+      "Laminate and cut the ring",
+      "Build the moving gear"
+    ],
+    "losses": [
+      "tooth friction",
+      "paper drag",
+      "gear flex"
+    ],
+    "builderMoment": "The curve almost closed, which is how one skipped tooth signs its artwork."
+  },
+  {
+    "slug": "cardboard-mechanical-hand",
+    "title": "Cardboard Mechanical Hand",
+    "category": "Cardboard builds",
+    "input": "hand pull on string tendons",
+    "output": "coordinated finger bending",
+    "motion": "linear pull-to-multiple angular joints",
+    "parts": [
+      "corrugated cardboard panels about 3-5 mm thick",
+      "masking or paper tape",
+      "washable school glue or low-temperature hot glue"
+    ],
+    "steps": [
+      "Trace and reinforce the palm",
+      "Build segmented fingers",
+      "Add tendon guides"
+    ],
+    "losses": [
+      "string-guide friction",
+      "hinge stiffness",
+      "finger flex"
+    ],
+    "builderMoment": "The cardboard hand learned to grasp and immediately chose the calibration ball."
+  },
+  {
+    "slug": "cardboard-conveyor-belt",
+    "title": "Cardboard Conveyor Belt",
+    "category": "Cardboard builds",
+    "input": "hand rotation of a drive roller",
+    "output": "linear transport of objects",
+    "motion": "rotary-to-continuous linear surface motion",
+    "parts": [
+      "corrugated cardboard panels about 3-5 mm thick",
+      "masking or paper tape",
+      "washable school glue or low-temperature hot glue"
+    ],
+    "steps": [
+      "Build parallel side rails",
+      "Make matched rollers",
+      "Install the drive roller"
+    ],
+    "losses": [
+      "belt slip",
+      "roller friction",
+      "edge rubbing"
+    ],
+    "builderMoment": "The belt drifted left because apparently it had somewhere to be."
+  },
+  {
+    "slug": "cardboard-vending-machine",
+    "title": "Cardboard Vending Machine",
+    "category": "Cardboard builds",
+    "input": "one full handle rotation",
+    "output": "one dispensed lightweight item",
+    "motion": "rotary input-to-discrete object release",
+    "parts": [
+      "corrugated cardboard panels about 3-5 mm thick",
+      "masking or paper tape",
+      "washable school glue or low-temperature hot glue"
+    ],
+    "steps": [
+      "Build the machine shell",
+      "Measure the products",
+      "Laminate the pocket wheel"
+    ],
+    "losses": [
+      "item rubbing",
+      "pocket flex",
+      "axle friction"
+    ],
+    "builderMoment": "The vending machine dispensed exactly one item and three engineering questions."
+  },
+  {
+    "slug": "cardboard-combination-safe",
+    "title": "Cardboard Combination Safe",
+    "category": "Cardboard builds",
+    "input": "ordered clockwise and counterclockwise dial rotations",
+    "output": "fence drop and bolt release",
+    "motion": "rotary sequence-to-binary latch output",
+    "parts": [
+      "corrugated cardboard panels about 3-5 mm thick",
+      "masking or paper tape",
+      "washable school glue or low-temperature hot glue"
+    ],
+    "steps": [
+      "Build the safe body",
+      "Make three code wheels",
+      "Install wheel spacers"
+    ],
+    "losses": [
+      "wheel rubbing",
+      "pickup-pin backlash",
+      "fence friction"
+    ],
+    "builderMoment": "The safe remembered the code. The builder remembered two-thirds of it."
+  },
+  {
+    "slug": "cardboard-gearbox-display",
+    "title": "Cardboard Gearbox Display",
+    "category": "Cardboard builds",
+    "input": "hand rotation of a large driver gear",
+    "output": "visible rotation through selectable gear paths",
+    "motion": "rotary-to-rotary educational display",
+    "parts": [
+      "corrugated cardboard panels about 3-5 mm thick",
+      "masking or paper tape",
+      "washable school glue or low-temperature hot glue"
+    ],
+    "steps": [
+      "Choose one tooth pitch",
+      "Cut and laminate gears",
+      "Build the display frame"
+    ],
+    "losses": [
+      "tooth edge rubbing",
+      "cardboard warping",
+      "axle friction"
+    ],
+    "builderMoment": "The gear pitch matched. The cardboard still had one independent artistic vision."
+  },
+  {
+    "slug": "hand-crank-cardboard-desk-fan",
+    "title": "Hand-Crank Cardboard Desk Fan",
+    "category": "Cardboard builds",
+    "input": "hand-crank rotation",
+    "output": "faster fan-blade rotation and airflow",
+    "motion": "rotary-to-faster rotary airflow",
+    "parts": [
+      "corrugated cardboard panels about 3-5 mm thick",
+      "masking or paper tape",
+      "washable school glue or low-temperature hot glue"
+    ],
+    "steps": [
+      "Build the fan stand",
+      "Install the crank drive",
+      "Install the fan shaft"
+    ],
+    "losses": [
+      "bearing friction",
+      "belt or gear slip",
+      "blade drag"
+    ],
+    "builderMoment": "The blades moved air. The frame moved with them, uninvited."
+  },
+  {
+    "slug": "cardboard-walking-creature",
+    "title": "Cardboard Walking Creature",
+    "category": "Cardboard builds",
+    "input": "hand rotation of a phased crankshaft",
+    "output": "alternating leg motion and forward body travel",
+    "motion": "rotary-to-cyclic walking translation",
+    "parts": [
+      "corrugated cardboard panels about 3-5 mm thick",
+      "masking or paper tape",
+      "washable school glue or low-temperature hot glue"
+    ],
+    "steps": [
+      "Prototype one leg",
+      "Duplicate mirrored legs",
+      "Build the stiff body"
+    ],
+    "losses": [
+      "foot slip",
+      "pivot friction",
+      "body flex"
+    ],
+    "builderMoment": "The creature took five steps, celebrated, and lay down for structural analysis."
+  },
+  {
+    "slug": "rubber-band-car",
+    "title": "Rubber Band Car",
+    "category": "Household engineering",
+    "input": "twisting stored in a rubber band",
+    "output": "rear-axle rotation and forward travel",
+    "motion": "elastic twist-to-rotary vehicle motion",
+    "parts": [
+      "10 × 25 cm corrugated-cardboard chassis",
+      "drinking straws about 12 cm",
+      "straight skewers or pencils"
+    ],
+    "steps": [
+      "Square the chassis",
+      "Attach straw bearings",
+      "Prepare the axles"
+    ],
+    "losses": [
+      "axle friction",
+      "wheel slip",
+      "chassis rubbing"
+    ],
+    "builderMoment": "The car was designed for distance and chose a very confident left turn."
+  },
+  {
+    "slug": "balloon-powered-car",
+    "title": "Balloon-Powered Car",
+    "category": "Household engineering",
+    "input": "pressurized air escaping backward",
+    "output": "forward vehicle acceleration",
+    "motion": "air jet-to-linear vehicle motion",
+    "parts": [
+      "10 × 22 cm lightweight cardboard chassis",
+      "drinking-straw bearings",
+      "straight skewers with covered ends"
+    ],
+    "steps": [
+      "Build a straight chassis",
+      "Install axle bearings",
+      "Add axles and wheels"
+    ],
+    "losses": [
+      "axle friction",
+      "air leaks",
+      "wheel slip"
+    ],
+    "builderMoment": "The nozzle pointed backward. The car still found a diagonal interpretation."
+  },
+  {
+    "slug": "paper-bridge-challenge",
+    "title": "Paper Bridge Challenge",
+    "category": "Household engineering",
+    "input": "downward coin load at midspan",
+    "output": "internal bending resistance across the span",
+    "motion": "static load-to-beam deflection",
+    "parts": [
+      "sheets of identical printer paper",
+      "books or boxes spaced 20 cm apart",
+      "equal coins or washers"
+    ],
+    "steps": [
+      "Set the test span",
+      "Test a flat control",
+      "Fold an accordion beam"
+    ],
+    "losses": [
+      "paper creasing",
+      "support slip",
+      "local buckling"
+    ],
+    "builderMoment": "The paper did not become stronger. It became geometrically persuasive."
+  },
+  {
+    "slug": "paper-tower-challenge",
+    "title": "Paper Tower Challenge",
+    "category": "Household engineering",
+    "input": "gravity and small lateral disturbances",
+    "output": "stable vertical structure",
+    "motion": "static compression with possible sway",
+    "parts": [
+      "sheets of identical printer paper",
+      "masking tape measured before building",
+      "flat test board"
+    ],
+    "steps": [
+      "Set the material budget",
+      "Choose a base geometry",
+      "Make consistent columns"
+    ],
+    "losses": [
+      "column buckling",
+      "joint peeling",
+      "base rocking"
+    ],
+    "builderMoment": "The tower reached sixty centimetres and discovered lateral loading."
+  },
+  {
+    "slug": "straw-truss-bridge",
+    "title": "Straw Truss Bridge",
+    "category": "Household engineering",
+    "input": "downward midspan test load",
+    "output": "axial forces carried to two supports",
+    "motion": "static loading with structural deflection",
+    "parts": [
+      "straight drinking straws",
+      "masking tape",
+      "10 × 45 cm light cardboard deck"
+    ],
+    "steps": [
+      "Draw a full-size side layout",
+      "Cut matched members",
+      "Build the first truss"
+    ],
+    "losses": [
+      "joint slip",
+      "straw buckling",
+      "deck twist"
+    ],
+    "builderMoment": "The truss carried the load until one straw remembered it was mostly air."
+  },
+  {
+    "slug": "bottle-cap-pulley-crane",
+    "title": "Bottle-Cap Pulley Crane",
+    "category": "Household engineering",
+    "input": "hand rotation of a winding drum",
+    "output": "vertical lift at a boom tip",
+    "motion": "rotary winch-to-linear lift",
+    "parts": [
+      "20 × 25 cm cardboard base",
+      "30 cm rolled-paper mast and 25 cm boom",
+      "bottle cap with centered hole"
+    ],
+    "steps": [
+      "Reinforce the base",
+      "Build the mast",
+      "Build and tie the boom"
+    ],
+    "losses": [
+      "pulley friction",
+      "string rubbing",
+      "boom flex"
+    ],
+    "builderMoment": "The crane lifted the load. The rear foot briefly considered joining it."
+  },
+  {
+    "slug": "clothespin-grabber",
+    "title": "Clothespin Grabber",
+    "category": "Household engineering",
+    "input": "hand squeeze at clothespin handles",
+    "output": "opening or closing at extended jaws",
+    "motion": "angular squeeze-to-angular jaw motion",
+    "parts": [
+      "wooden spring clothespin",
+      "craft sticks or folded-card arms about 15 cm",
+      "foam squares"
+    ],
+    "steps": [
+      "Inspect the clothespin",
+      "Prepare equal arms",
+      "Attach the extensions"
+    ],
+    "losses": [
+      "extension flex",
+      "pivot friction",
+      "pad slip"
+    ],
+    "builderMoment": "The clothespin gained reach and immediately learned about leverage."
+  },
+  {
+    "slug": "craft-stick-scissor-lift",
+    "title": "Craft-Stick Scissor Lift",
+    "category": "Household engineering",
+    "input": "horizontal motion between lower pivots",
+    "output": "vertical platform lift",
+    "motion": "linear input-to-vertical translation",
+    "parts": [
+      "equal craft sticks",
+      "paper fasteners or small bolts",
+      "12 × 15 cm cardboard base"
+    ],
+    "steps": [
+      "Pair and mark sticks",
+      "Build four X units",
+      "Connect the first side chain"
+    ],
+    "losses": [
+      "pivot friction",
+      "link bending",
+      "slot rubbing"
+    ],
+    "builderMoment": "The platform rose beautifully. The left scissor side arrived half a second later."
+  },
+  {
+    "slug": "household-balance-scale",
+    "title": "Household Balance Scale",
+    "category": "Household engineering",
+    "input": "gravity forces from two sample masses",
+    "output": "beam angle showing comparison",
+    "motion": "static force difference-to-angular deflection",
+    "parts": [
+      "30 cm ruler or straight cardboard beam",
+      "pencil or skewer pivot",
+      "identical paper cups"
+    ],
+    "steps": [
+      "Build the stable stand",
+      "Find the beam center",
+      "Hang the empty beam"
+    ],
+    "losses": [
+      "pivot friction",
+      "unequal cup mass",
+      "off-center strings"
+    ],
+    "builderMoment": "The masses were equal. The two paper cups had other data."
+  },
+  {
+    "slug": "rolling-can-racer",
+    "title": "Rolling Can Racer",
+    "category": "Household engineering",
+    "input": "pre-rolling that twists an internal rubber band",
+    "output": "self-driven can rotation",
+    "motion": "stored elastic twist-to-rolling translation",
+    "parts": [
+      "clean round oatmeal can or lidded plastic cylinder",
+      "long rubber band in good condition",
+      "large washers tied together under 40 g"
+    ],
+    "steps": [
+      "Inspect the container",
+      "Mark axle centers",
+      "Prepare the internal mass"
+    ],
+    "losses": [
+      "axle-hole friction",
+      "internal mass rubbing",
+      "shell slip"
+    ],
+    "builderMoment": "The can rolled forward, paused, and held a private meeting with its internal washer."
+  },
+  {
+    "slug": "rubber-band-paddle-boat",
+    "title": "Rubber-Band Paddle Boat",
+    "category": "Household engineering",
+    "input": "twist stored in a rubber band",
+    "output": "paddle rotation and forward boat motion",
+    "motion": "elastic twist-to-rotary-to-linear motion",
+    "parts": [
+      "clean foam food tray about 15 × 25 cm",
+      "craft sticks about 12 cm",
+      "straight skewer with covered ends"
+    ],
+    "steps": [
+      "Shape the hull",
+      "Build axle towers",
+      "Install the paddle axle"
+    ],
+    "losses": [
+      "water drag",
+      "paddle slip",
+      "shaft rubbing"
+    ],
+    "builderMoment": "The paddle boat discovered hydrodynamics and immediately requested a larger test tub."
+  },
+  {
+    "slug": "balloon-hovercraft",
+    "title": "Balloon Hovercraft",
+    "category": "Household engineering",
+    "input": "pressurized air from an inflated balloon",
+    "output": "a supporting air film and horizontal glide",
+    "motion": "airflow-to-low-friction translation",
+    "parts": [
+      "old compact disc or 12 cm smooth cardboard disk",
+      "push-pull bottle-cap nozzle or short tube",
+      "balloon"
+    ],
+    "steps": [
+      "Prepare the base",
+      "Make the air port",
+      "Check the seal"
+    ],
+    "losses": [
+      "air leakage",
+      "surface roughness",
+      "disk tilt"
+    ],
+    "builderMoment": "The hovercraft rose by a millimetre and gained the confidence of an aircraft carrier."
+  },
+  {
+    "slug": "magnetic-maze",
+    "title": "Magnetic Maze",
+    "category": "Household engineering",
+    "input": "hand motion of an enclosed magnet below the board",
+    "output": "controlled steel-token motion through the maze",
+    "motion": "remote hand translation-to-token translation",
+    "parts": [
+      "25 × 35 cm corrugated-cardboard board",
+      "2 cm-wide cardboard wall strips",
+      "large magnet permanently sealed in a taped card pouch"
+    ],
+    "steps": [
+      "Plan the route",
+      "Build the walls",
+      "Seal the token"
+    ],
+    "losses": [
+      "board thickness",
+      "surface friction",
+      "magnet offset"
+    ],
+    "builderMoment": "The token followed the magnet faithfully until corner three presented a compelling alternative."
+  },
+  {
+    "slug": "gravity-marble-timer",
+    "title": "Gravity Marble Timer",
+    "category": "Household engineering",
+    "input": "marble release from a fixed height",
+    "output": "a delayed arrival at the finish gate",
+    "motion": "gravitational drop-to-controlled rolling motion",
+    "parts": [
+      "marble at least 16 mm wide",
+      "paper tubes split lengthwise",
+      "60 × 90 cm backing board"
+    ],
+    "steps": [
+      "Set the target",
+      "Build a release gate",
+      "Lay the first descent"
+    ],
+    "losses": [
+      "rolling friction",
+      "wall impacts",
+      "track flex"
+    ],
+    "builderMoment": "The timer hit exactly ten seconds once and has been discussing sample size ever since."
+  },
+  {
+    "slug": "chain-reaction-machine",
+    "title": "Chain Reaction Machine",
+    "category": "Household engineering",
+    "input": "one hand release at the first stage",
+    "output": "completion of a visible final task",
+    "motion": "linked rolling, falling, rotating, and lever motions",
+    "parts": [
+      "dominoes or folded-card standups",
+      "paper tubes or cardboard ramps",
+      "ping-pong balls or large wooden balls"
+    ],
+    "steps": [
+      "Choose the final task",
+      "Map five stages",
+      "Build stage five first"
+    ],
+    "losses": [
+      "impact misalignment",
+      "surface friction",
+      "flexing triggers"
+    ],
+    "builderMoment": "Stages one through four were flawless. Stage five had not received the calendar invitation."
+  },
+  {
+    "slug": "egg-drop-capsule",
+    "title": "Egg-Drop Capsule",
+    "category": "Household engineering",
+    "input": "gravitational fall from a fixed height",
+    "output": "a longer, gentler payload stop",
+    "motion": "vertical fall-to-deformation and deceleration",
+    "parts": [
+      "plastic practice egg or sealed 50 mL water bag",
+      "paper straws",
+      "rubber bands"
+    ],
+    "steps": [
+      "Define the payload",
+      "Build a suspension cup",
+      "Create a straw frame"
+    ],
+    "losses": [
+      "crumple deformation",
+      "air drag",
+      "payload shifting"
+    ],
+    "builderMoment": "The capsule survived. The paper cone would like its deformation described as heroic."
+  },
+  {
+    "slug": "indoor-parachute-drop-test",
+    "title": "Indoor Parachute Drop Test",
+    "category": "Household engineering",
+    "input": "release of a raised payload",
+    "output": "slower vertical descent",
+    "motion": "gravitational fall opposed by aerodynamic drag",
+    "parts": [
+      "light plastic or tissue squares with 20, 30, and 40 cm sides",
+      "equal strings about 35 cm",
+      "paper cup plus washers totaling 20 g"
+    ],
+    "steps": [
+      "Prepare equal payloads",
+      "Cut three canopies",
+      "Attach equal strings"
+    ],
+    "losses": [
+      "canopy leakage",
+      "string tangles",
+      "payload swing"
+    ],
+    "builderMoment": "The parachute opened beautifully after landing, which was technically outside the test window."
+  },
+  {
+    "slug": "paper-helicopter-flight-test",
+    "title": "Paper Helicopter Flight Test",
+    "category": "Household engineering",
+    "input": "gravitational descent through still air",
+    "output": "rotor spin and slowed falling motion",
+    "motion": "vertical fall-to-rotary autorotation",
+    "parts": [
+      "paper strips 5 × 20 cm",
+      "paper clips of equal mass",
+      "ruler and pencil"
+    ],
+    "steps": [
+      "Draw the template",
+      "Cut the rotor",
+      "Fold opposite blades"
+    ],
+    "losses": [
+      "blade flutter",
+      "body wobble",
+      "paper deformation"
+    ],
+    "builderMoment": "The rotor did not fall. It descended with a carefully managed schedule."
+  },
+  {
+    "slug": "wind-powered-sail-car",
+    "title": "Wind-Powered Sail Car",
+    "category": "Household engineering",
+    "input": "moving air from a fixed household fan",
+    "output": "forward rolling motion",
+    "motion": "airflow-to-linear vehicle travel",
+    "parts": [
+      "10 × 22 cm light-card chassis",
+      "drinking-straw bearings",
+      "straight covered skewers"
+    ],
+    "steps": [
+      "Build the chassis",
+      "Install bearings",
+      "Add wheels"
+    ],
+    "losses": [
+      "axle friction",
+      "wheel slip",
+      "sail leakage"
+    ],
+    "builderMoment": "The sail caught the wind. The left front wheel caught a completely different idea."
+  },
+  {
+    "slug": "water-hydraulic-lift",
+    "title": "Water-Hydraulic Lift",
+    "category": "Household engineering",
+    "input": "hand force and travel at the control syringe",
+    "output": "upward force and travel at the lift syringe",
+    "motion": "linear fluid displacement-to-linear lift motion",
+    "parts": [
+      "needle-free plastic syringes, one 10 mL and one 20 mL",
+      "60 cm flexible tubing that fits tightly",
+      "water with one drop of food color"
+    ],
+    "steps": [
+      "Build the guide frame",
+      "Make the lift platform",
+      "Fill the circuit"
+    ],
+    "losses": [
+      "trapped air",
+      "seal friction",
+      "hose expansion"
+    ],
+    "builderMoment": "The hydraulic line had one tiny bubble and a very large opinion about precision."
+  },
+  {
+    "slug": "pulley-elevator",
+    "title": "Pulley Elevator",
+    "category": "Classroom challenges",
+    "input": "downward pull on a free rope end",
+    "output": "upward platform travel",
+    "motion": "linear pull-to-opposite linear lift",
+    "parts": [
+      "60 cm-tall cardboard or classroom-frame tower",
+      "15 × 15 cm platform with two guide sleeves",
+      "safe grooved pulleys or thread spools on dowels"
+    ],
+    "steps": [
+      "Brace the tower",
+      "Make the platform",
+      "Mount the fixed pulley"
+    ],
+    "losses": [
+      "axle friction",
+      "rope rubbing",
+      "platform tilt"
+    ],
+    "builderMoment": "The elevator rose smoothly after the rope stopped trying to explore the frame."
+  },
+  {
+    "slug": "marble-run-challenge",
+    "title": "Marble Run Challenge",
+    "category": "Classroom challenges",
+    "input": "release from a fixed starting height",
+    "output": "controlled marble arrival in a target cup",
+    "motion": "gravitational descent-to-guided rolling",
+    "parts": [
+      "paper tubes cut lengthwise",
+      "60 × 90 cm cardboard backboard",
+      "marble at least 16 mm wide"
+    ],
+    "steps": [
+      "Set the constraints",
+      "Build the start gate",
+      "Add the first slope"
+    ],
+    "losses": [
+      "rolling friction",
+      "joint impacts",
+      "track flex"
+    ],
+    "builderMoment": "The marble completed four runs and used the fifth to review the wall height."
+  },
+  {
+    "slug": "longest-paper-cantilever",
+    "title": "Longest Paper Cantilever",
+    "category": "Classroom challenges",
+    "input": "downward load at the free tip",
+    "output": "bending resistance at the anchored end",
+    "motion": "static load-to-controlled deflection",
+    "parts": [
+      "sheets of printer paper",
+      "masking tape",
+      "binder clips"
+    ],
+    "steps": [
+      "Set the rules",
+      "Test a flat control",
+      "Choose a section"
+    ],
+    "losses": [
+      "paper creasing",
+      "clamp slip",
+      "torsional twist"
+    ],
+    "builderMoment": "The cantilever reached 45 centimetres and then remembered gravity had voting rights."
+  },
+  {
+    "slug": "strongest-index-card-beam",
+    "title": "Strongest Index-Card Beam",
+    "category": "Classroom challenges",
+    "input": "downward midspan test load",
+    "output": "structural resistance across two supports",
+    "motion": "static load-to-beam deflection",
+    "parts": [
+      "identical index cards",
+      "masking tape",
+      "books spaced 20 cm apart"
+    ],
+    "steps": [
+      "Define four designs",
+      "Build the flat control",
+      "Build the channel"
+    ],
+    "losses": [
+      "local buckling",
+      "crease damage",
+      "support slip"
+    ],
+    "builderMoment": "The index card supported 800 grams and now expects to be addressed as a structural member."
+  },
+  {
+    "slug": "slowest-marble-track",
+    "title": "Slowest Marble Track",
+    "category": "Classroom challenges",
+    "input": "release from a fixed 40 cm height",
+    "output": "a delayed but complete marble arrival",
+    "motion": "gravitational descent-to-slow rolling motion",
+    "parts": [
+      "paper channels totaling 1.5 m",
+      "marble at least 16 mm wide",
+      "40 cm-tall support board"
+    ],
+    "steps": [
+      "Set fixed limits",
+      "Build the release gate",
+      "Create a baseline slope"
+    ],
+    "losses": [
+      "rolling friction",
+      "wall rubbing",
+      "gentle impacts"
+    ],
+    "builderMoment": "The marble took twelve seconds to finish and spent nine of them considering one seam."
+  },
+  {
+    "slug": "cup-stacking-mechanical-hand",
+    "title": "Cup-Stacking Mechanical Hand",
+    "category": "Classroom challenges",
+    "input": "hand pulls on five control strings",
+    "output": "finger curling and cup grip",
+    "motion": "linear tendon pull-to-curved finger motion",
+    "parts": [
+      "20 × 30 cm corrugated-cardboard palm",
+      "3 × 20 cm card finger strips",
+      "smooth string"
+    ],
+    "steps": [
+      "Trace the palm",
+      "Segment the fingers",
+      "Attach fingers"
+    ],
+    "losses": [
+      "string friction",
+      "joint stiffness",
+      "uneven tension"
+    ],
+    "builderMoment": "The hand stacked two cups and then shook hands with the third."
+  },
+  {
+    "slug": "load-bearing-tower",
+    "title": "Load-Bearing Tower",
+    "category": "Classroom challenges",
+    "input": "downward top load and small side disturbance",
+    "output": "stable compression paths to the base",
+    "motion": "static loading-to-small structural deflection",
+    "parts": [
+      "sheets of printer paper",
+      "masking tape",
+      "15 × 15 cm load plate"
+    ],
+    "steps": [
+      "Set the constraints",
+      "Choose a frame plan",
+      "Roll equal columns"
+    ],
+    "losses": [
+      "column buckling",
+      "joint slip",
+      "base tipping"
+    ],
+    "builderMoment": "The tower passed 500 grams and failed a highly opinionated piece of tape."
+  },
+  {
+    "slug": "bridge-under-budget",
+    "title": "Bridge Under Budget",
+    "category": "Classroom challenges",
+    "input": "downward center-span test load",
+    "output": "distributed force paths to two supports",
+    "motion": "static loading-to-structural deformation",
+    "parts": [
+      "craft sticks priced at 1 point each",
+      "masking tape priced at 1 point per 5 cm",
+      "10 × 40 cm card deck priced at 20 points"
+    ],
+    "steps": [
+      "Publish the price list",
+      "Sketch two concepts",
+      "Build identical side trusses"
+    ],
+    "losses": [
+      "joint slip",
+      "member buckling",
+      "deck bending"
+    ],
+    "builderMoment": "The bridge had twelve points left and immediately hired another diagonal."
+  },
+  {
+    "slug": "tabletop-zipline-carrier",
+    "title": "Tabletop Zipline Carrier",
+    "category": "Classroom challenges",
+    "input": "release from the raised end of a sloped line",
+    "output": "payload travel and controlled stop",
+    "motion": "gravitational descent-to-linear carrier motion",
+    "parts": [
+      "smooth cord",
+      "secure supports no higher than 1 m",
+      "thread spool or grooved wheel"
+    ],
+    "steps": [
+      "Set the low line",
+      "Build the carrier",
+      "Add a release tab"
+    ],
+    "losses": [
+      "line friction",
+      "carrier swing",
+      "wheel rubbing"
+    ],
+    "builderMoment": "The package arrived on time and parked three centimetres past its reservation."
+  },
+  {
+    "slug": "classroom-rescue-device",
+    "title": "Classroom Rescue Device",
+    "category": "Classroom challenges",
+    "input": "hand motion outside a marked boundary",
+    "output": "controlled pickup and placement of a payload",
+    "motion": "remote pull, push, or linkage motion-to-object transport",
+    "parts": [
+      "craft sticks or rolled-paper tubes",
+      "string",
+      "rubber bands and binder clips"
+    ],
+    "steps": [
+      "Define the scenario",
+      "Choose a pickup method",
+      "Build the reach beam"
+    ],
+    "losses": [
+      "tool flex",
+      "grip slip",
+      "joint backlash"
+    ],
+    "builderMoment": "The rescue succeeded. The gripper then refused to release the evidence."
+  },
+  {
+    "slug": "rube-goldberg-switch",
+    "title": "Rube Goldberg Switch",
+    "category": "Classroom challenges",
+    "input": "one deliberate release at stage one",
+    "output": "momentary low-voltage switch closure",
+    "motion": "sequential falling, rolling, and lever motions-to-linear press",
+    "parts": [
+      "dominoes or card standups",
+      "paper ramps and large balls",
+      "rulers on pencil pivots"
+    ],
+    "steps": [
+      "Define the switch press",
+      "Build backward one stage",
+      "Add the middle lever"
+    ],
+    "losses": [
+      "handoff misalignment",
+      "surface friction",
+      "trigger flex"
+    ],
+    "builderMoment": "The machine moved for twelve seconds to accomplish what one finger considered a brief meeting."
+  },
+  {
+    "slug": "mechanical-advantage-lift-challenge",
+    "title": "Mechanical Advantage Lift Challenge",
+    "category": "Classroom challenges",
+    "input": "measured hand force over an input distance",
+    "output": "upward travel of a 500-gram load",
+    "motion": "linear or rotary input-to-linear lift",
+    "parts": [
+      "500 g bagged load",
+      "spring scale measuring 0-10 N",
+      "smooth cord"
+    ],
+    "steps": [
+      "Measure direct lift",
+      "Choose a machine",
+      "Build the frame"
+    ],
+    "losses": [
+      "bearing friction",
+      "rope stretch",
+      "frame flex"
+    ],
+    "builderMoment": "The load needed half the force and twice the rope. Conservation of work kept the receipt."
+  },
+  {
+    "slug": "gear-ratio-race",
+    "title": "Gear Ratio Race",
+    "category": "Classroom challenges",
+    "input": "equal motor or hand-crank input rotation",
+    "output": "drive-wheel rotation and vehicle motion",
+    "motion": "rotary transmission-to-linear travel",
+    "parts": [
+      "matching brick-compatible rover chassis",
+      "small and large gears with known tooth counts",
+      "equal hand cranks or matched low-voltage motors"
+    ],
+    "steps": [
+      "Standardize the chassis",
+      "Choose two ratios",
+      "Brace the gear meshes"
+    ],
+    "losses": [
+      "gear mesh friction",
+      "wheel slip",
+      "axle rubbing"
+    ],
+    "builderMoment": "The speed car won the sprint and submitted no comment about the towing round."
+  },
+  {
+    "slug": "friction-investigation-sled",
+    "title": "Friction Investigation Sled",
+    "category": "Classroom challenges",
+    "input": "horizontal pull measured by a spring scale",
+    "output": "sled motion across a test surface",
+    "motion": "linear force-to-linear sliding",
+    "parts": [
+      "10 × 15 cm flat cardboard sled with raised edges",
+      "spring scale measuring 0-10 N",
+      "bagged washers in 100 g groups"
+    ],
+    "steps": [
+      "Square the sled",
+      "Mark the lane",
+      "Zero the scale"
+    ],
+    "losses": [
+      "surface deformation",
+      "pull-angle variation",
+      "sled edge catching"
+    ],
+    "builderMoment": "The sled preferred felt and provided a force reading to support its position."
+  },
+  {
+    "slug": "center-of-mass-balancing-sculpture",
+    "title": "Center-of-Mass Balancing Sculpture",
+    "category": "Classroom challenges",
+    "input": "gravity acting on arranged masses",
+    "output": "restoring rotation toward the balance position",
+    "motion": "small angular disturbance-to-restoring swing",
+    "parts": [
+      "30 cm craft-stick or rolled-paper crossbar",
+      "30 cm strings",
+      "equal 50 g bagged washer sets"
+    ],
+    "steps": [
+      "Build the stable support",
+      "Mark the crossbar",
+      "Attach low masses"
+    ],
+    "losses": [
+      "support friction",
+      "frame flex",
+      "air movement"
+    ],
+    "builderMoment": "The sculpture looked impossible, balanced calmly, and declined further questions."
+  },
+  {
+    "slug": "simple-motorized-fan",
+    "title": "Simple Motorized Fan",
+    "category": "Robotics/electronics",
+    "input": "switch signal and 3-volt battery current",
+    "output": "motor rotation and directed airflow",
+    "motion": "electrical energy-to-rotary blade motion",
+    "parts": [
+      "3 V hobby motor rated for two AA cells",
+      "two-AA battery holder with fresh alkaline cells",
+      "logic-level N-channel MOSFET rated above motor current"
+    ],
+    "steps": [
+      "Build the motor stand",
+      "Install the guard",
+      "Wire the power stage"
+    ],
+    "losses": [
+      "bearing friction",
+      "blade drag",
+      "electrical resistance"
+    ],
+    "builderMoment": "The fan moved plenty of air after the propeller agreed to face the useful direction."
+  },
+  {
+    "slug": "low-cost-robot-arm",
+    "title": "Low-Cost Robot Arm",
+    "category": "Robotics/electronics",
+    "input": "microcontroller pulse commands",
+    "output": "shoulder, elbow, and claw position",
+    "motion": "electrical commands-to-multi-joint angular motion",
+    "parts": [
+      "5 V micro servos rated at least 1.5 kg·cm",
+      "5 V micro servo",
+      "microcontroller board with three PWM-capable pins"
+    ],
+    "steps": [
+      "Build the base",
+      "Make equal link pairs",
+      "Mount the shoulder servo"
+    ],
+    "losses": [
+      "servo backlash",
+      "link flex",
+      "joint friction"
+    ],
+    "builderMoment": "The arm completed pick-and-place, then returned home with the dignity of a much larger machine."
+  },
+  {
+    "slug": "bristlebot",
+    "title": "Bristlebot",
+    "category": "Robotics/electronics",
+    "input": "3-volt motor rotation with an eccentric mass",
+    "output": "small forward body motion",
+    "motion": "rotary imbalance-to-vibration-to-translation",
+    "parts": [
+      "small toothbrush head with straight trimmed edges",
+      "3 V coin vibration motor with insulated leads",
+      "two-AAA switched battery holder"
+    ],
+    "steps": [
+      "Prepare the brush",
+      "Inspect the motor",
+      "Place components"
+    ],
+    "losses": [
+      "random bouncing",
+      "bristle drag",
+      "battery movement"
+    ],
+    "builderMoment": "The bristlebot moved forward by vibrating with remarkable administrative persistence."
+  },
+  {
+    "slug": "bumper-switch-rover",
+    "title": "Bumper-Switch Rover",
+    "category": "Robotics/electronics",
+    "input": "left or right bumper switch closure",
+    "output": "motor reverse and turn sequence",
+    "motion": "electrical state-to-differential wheel motion",
+    "parts": [
+      "two-wheel low-voltage rover chassis with caster",
+      "3-6 V geared motors",
+      "dual H-bridge driver rated for motor stall current"
+    ],
+    "steps": [
+      "Build and roll the chassis",
+      "Mount the bumpers",
+      "Wire the driver"
+    ],
+    "losses": [
+      "wheel slip",
+      "gearbox friction",
+      "bumper flex"
+    ],
+    "builderMoment": "The rover met the wall, processed the feedback, and chose a different career path."
+  },
+  {
+    "slug": "line-following-robot",
+    "title": "Line-Following Robot",
+    "category": "Robotics/electronics",
+    "input": "left and right reflectance measurements",
+    "output": "differential wheel-speed corrections",
+    "motion": "sensor feedback-to-steered vehicle motion",
+    "parts": [
+      "two-wheel geared rover chassis",
+      "3-6 V geared motors and matching wheels",
+      "dual H-bridge rated above stall current"
+    ],
+    "steps": [
+      "Build a straight rover",
+      "Mount the sensor bar",
+      "Wire the motor stage"
+    ],
+    "losses": [
+      "wheel slip",
+      "sensor noise",
+      "motor mismatch"
+    ],
+    "builderMoment": "The robot followed the line perfectly until the tape corner offered a philosophical question."
+  },
+  {
+    "slug": "light-seeking-robot",
+    "title": "Light-Seeking Robot",
+    "category": "Robotics/electronics",
+    "input": "left and right light-sensor readings",
+    "output": "steering toward higher light intensity",
+    "motion": "light gradient-to-differential wheel motion",
+    "parts": [
+      "two-wheel rover chassis",
+      "geared low-voltage motors",
+      "rated dual H-bridge"
+    ],
+    "steps": [
+      "Build and align the rover",
+      "Mount paired sensors",
+      "Wire sensors and driver"
+    ],
+    "losses": [
+      "ambient light",
+      "sensor mismatch",
+      "wheel slip"
+    ],
+    "builderMoment": "The robot found the light and briefly considered every reflective table leg along the way."
+  },
+  {
+    "slug": "microcontroller-servo-pointer",
+    "title": "Microcontroller Servo Pointer",
+    "category": "Robotics/electronics",
+    "input": "potentiometer shaft angle",
+    "output": "servo pointer angle",
+    "motion": "analog rotation-to-commanded angular position",
+    "parts": [
+      "5 V micro servo",
+      "microcontroller board",
+      "10 kΩ linear potentiometer"
+    ],
+    "steps": [
+      "Build the dial",
+      "Mount the servo",
+      "Wire the input"
+    ],
+    "losses": [
+      "servo backlash",
+      "potentiometer noise",
+      "pointer flex"
+    ],
+    "builderMoment": "The pointer reached 90 degrees and requested that everyone stop touching the knob."
+  },
+  {
+    "slug": "traffic-light-controller",
+    "title": "Traffic Light Controller",
+    "category": "Robotics/electronics",
+    "input": "elapsed time and pedestrian button event",
+    "output": "safe red-yellow-green LED sequence",
+    "motion": "digital events-to-visible state changes",
+    "parts": [
+      "microcontroller board",
+      "red, yellow, and green 5 mm LEDs",
+      "220-330 Ω resistors"
+    ],
+    "steps": [
+      "Plan valid states",
+      "Build the light housing",
+      "Add current resistors"
+    ],
+    "losses": [
+      "button bounce",
+      "timing drift",
+      "wiring errors"
+    ],
+    "builderMoment": "The button requested a crossing. The state machine checked its schedule and replied correctly."
+  },
+  {
+    "slug": "led-reaction-timer",
+    "title": "LED Reaction Timer",
+    "category": "Robotics/electronics",
+    "input": "button press after a light cue",
+    "output": "measured reaction time in milliseconds",
+    "motion": "human event-to-digital timing result",
+    "parts": [
+      "microcontroller board",
+      "bright LED",
+      "220-330 Ω resistor"
+    ],
+    "steps": [
+      "Build the cue circuit",
+      "Wire the button",
+      "Test input edges"
+    ],
+    "losses": [
+      "button bounce",
+      "display delay",
+      "false starts"
+    ],
+    "builderMoment": "The timer said 254 milliseconds. The button said it had been ready for hours."
+  },
+  {
+    "slug": "conductivity-tester",
+    "title": "Conductivity Tester",
+    "category": "Robotics/electronics",
+    "input": "probe contact across a sample",
+    "output": "current-limited LED brightness",
+    "motion": "electrical path-to-visible indicator",
+    "parts": [
+      "two-AA battery holder with 3 V output",
+      "red LED with forward voltage near 2 V",
+      "330 Ω resistor"
+    ],
+    "steps": [
+      "Sort test samples",
+      "Identify LED polarity",
+      "Build current limit"
+    ],
+    "losses": [
+      "contact resistance",
+      "oxide layers",
+      "loose clips"
+    ],
+    "builderMoment": "The metal spoon passed instantly. The painted paper clip requested a surface inspection."
+  },
+  {
+    "slug": "tilt-alarm",
+    "title": "Tilt Alarm",
+    "category": "Robotics/electronics",
+    "input": "tilt-switch contact changing with orientation",
+    "output": "audible buzzer signal",
+    "motion": "angular tilt-to-electrical state change",
+    "parts": [
+      "ball-type tilt switch rated for low-voltage signal use",
+      "3-5 V active buzzer under 100 mA",
+      "2N2222 transistor or logic MOSFET rated above buzzer current"
+    ],
+    "steps": [
+      "Characterize the switch",
+      "Build the mounting wedge",
+      "Wire the buzzer stage"
+    ],
+    "losses": [
+      "contact bounce",
+      "mount movement",
+      "battery resistance"
+    ],
+    "builderMoment": "The alarm remained calm at 29 degrees and became extremely certain at 31."
+  },
+  {
+    "slug": "ultrasonic-distance-meter",
+    "title": "Ultrasonic Distance Meter",
+    "category": "Robotics/electronics",
+    "input": "ultrasonic trigger pulse and returning echo",
+    "output": "calculated distance in centimetres",
+    "motion": "sound pulse travel-to-digital measurement",
+    "parts": [
+      "5 V ultrasonic distance module with trigger and echo pins",
+      "5 V microcontroller board",
+      "breadboard and jumper wires"
+    ],
+    "steps": [
+      "Mount the sensor",
+      "Wire rated power",
+      "Send a clean trigger"
+    ],
+    "losses": [
+      "angled reflections",
+      "soft targets",
+      "air temperature"
+    ],
+    "builderMoment": "The sensor measured the wall accurately and remained skeptical of the angled notebook."
+  },
+  {
+    "slug": "automatic-night-light",
+    "title": "Automatic Night Light",
+    "category": "Robotics/electronics",
+    "input": "light-dependent sensor resistance",
+    "output": "controlled LED illumination",
+    "motion": "light level-to-electrical switching",
+    "parts": [
+      "photoresistor rated for low-voltage sensing",
+      "10 kΩ fixed resistor",
+      "microcontroller board"
+    ],
+    "steps": [
+      "Build the divider",
+      "Add the indicator",
+      "Read raw values"
+    ],
+    "losses": [
+      "ambient reflections",
+      "sensor tolerance",
+      "battery drop"
+    ],
+    "builderMoment": "The night light turned on in the dark and ignored the dramatic shadow of one finger."
+  },
+  {
+    "slug": "mini-motorized-conveyor",
+    "title": "Mini Motorized Conveyor",
+    "category": "Robotics/electronics",
+    "input": "low-voltage motor torque through a driver",
+    "output": "continuous belt motion and package transport",
+    "motion": "rotary motor motion-to-linear belt motion",
+    "parts": [
+      "3-6 V geared motor rated for chosen supply",
+      "dual H-bridge or MOSFET driver rated above stall current",
+      "regulated 5-6 V battery pack with fuse"
+    ],
+    "steps": [
+      "Build a square frame",
+      "Install the idle roller",
+      "Install the drive roller"
+    ],
+    "losses": [
+      "roller bearing friction",
+      "belt slip",
+      "belt bending"
+    ],
+    "builderMoment": "The conveyor delivered four boxes. The fifth discovered edge tracking."
+  },
+  {
+    "slug": "servo-powered-claw",
+    "title": "Servo-Powered Claw",
+    "category": "Robotics/electronics",
+    "input": "button or potentiometer command",
+    "output": "symmetric jaw opening and closing",
+    "motion": "servo rotation-to-opposed jaw rotation",
+    "parts": [
+      "5 V micro servo rated at least 1.5 kg·cm",
+      "microcontroller board",
+      "regulated 5 V, 1 A supply"
+    ],
+    "steps": [
+      "Build the claw frame",
+      "Make matched jaws",
+      "Install pivots"
+    ],
+    "losses": [
+      "linkage backlash",
+      "jaw flex",
+      "pivot friction"
+    ],
+    "builderMoment": "The claw picked up the foam block and released it only after a brief contractual review."
+  },
+  {
+    "slug": "drawbot",
+    "title": "Drawbot",
+    "category": "Robotics/electronics",
+    "input": "timed left and right motor commands",
+    "output": "vehicle path recorded by a marker",
+    "motion": "electrical motor rotation-to-planar drawing motion",
+    "parts": [
+      "two-wheel low-voltage rover chassis",
+      "matched 3-6 V geared motors",
+      "dual H-bridge rated above stall current"
+    ],
+    "steps": [
+      "Square the chassis",
+      "Build the marker holder",
+      "Wire the driver"
+    ],
+    "losses": [
+      "wheel slip",
+      "motor mismatch",
+      "marker drag"
+    ],
+    "builderMoment": "The robot drew a square with three right angles and one creative negotiation."
+  },
+  {
+    "slug": "scribblebot",
+    "title": "Scribblebot",
+    "category": "Robotics/electronics",
+    "input": "rotation of an enclosed eccentric motor mass",
+    "output": "vibration-driven motion and drawn trace",
+    "motion": "rotary imbalance-to-planar vibration motion",
+    "parts": [
+      "paper cup or light container",
+      "washable markers of equal size",
+      "enclosed 3 V vibration motor"
+    ],
+    "steps": [
+      "Prepare the body",
+      "Attach markers",
+      "Mount the motor"
+    ],
+    "losses": [
+      "marker friction",
+      "body flex",
+      "battery movement"
+    ],
+    "builderMoment": "The scribblebot drew a dense orbit and called it vibration-assisted composition."
+  },
+  {
+    "slug": "capacitive-touch-cardboard-piano",
+    "title": "Capacitive-Touch Cardboard Piano",
+    "category": "Robotics/electronics",
+    "input": "finger contact changing key capacitance",
+    "output": "five mapped audio notes",
+    "motion": "touch event-to-digital sound output",
+    "parts": [
+      "microcontroller board with supported capacitive-touch inputs or library",
+      "8 × 5 cm cardboard keys wrapped in foil",
+      "1 MΩ resistors if required by the chosen sensing method"
+    ],
+    "steps": [
+      "Build five keys",
+      "Space the keyboard",
+      "Connect touch channels"
+    ],
+    "losses": [
+      "electrical noise",
+      "key coupling",
+      "loose foil"
+    ],
+    "builderMoment": "The cardboard piano played C, D, E, and one note caused by a very enthusiastic sleeve."
+  },
+  {
+    "slug": "hand-crank-generator-demo",
+    "title": "Hand-Crank Generator Demo",
+    "category": "Robotics/electronics",
+    "input": "slow hand-crank rotation",
+    "output": "low-voltage electrical energy",
+    "motion": "rotary mechanical input-to-electrical output",
+    "parts": [
+      "3-6 V permanent-magnet DC motor",
+      "large hand crank and guarded 3:1 speed-increasing gear or pulley",
+      "bridge rectifier rated above 1 A or four 1N4001 diodes"
+    ],
+    "steps": [
+      "Build the base",
+      "Add speed increase",
+      "Test rotation by hand"
+    ],
+    "losses": [
+      "bearing friction",
+      "gear friction",
+      "winding resistance"
+    ],
+    "builderMoment": "The LED lit, and the crank immediately made electrical work feel very literal."
+  },
+  {
+    "slug": "low-voltage-electromagnet-lifter",
+    "title": "Low-Voltage Electromagnet Lifter",
+    "category": "Robotics/electronics",
+    "input": "brief low-voltage current through a wire coil",
+    "output": "temporary magnetic attraction",
+    "motion": "electrical current-to-steel-object lift",
+    "parts": [
+      "soft iron bolt about 6 mm × 60 mm",
+      "enameled copper magnet wire 26-30 AWG",
+      "logic-level MOSFET rated above measured coil current"
+    ],
+    "steps": [
+      "Prepare the core",
+      "Wind the coil",
+      "Expose wire ends"
+    ],
+    "losses": [
+      "wire resistance",
+      "air gap",
+      "core leakage"
+    ],
+    "builderMoment": "The electromagnet lifted seven clips and then observed its mandatory cooling break."
+  },
+  {
+    "slug": "scratch-arcade-game",
+    "title": "Scratch Arcade Game",
+    "category": "Coding/game projects",
+    "input": "left and right keyboard events",
+    "output": "player motion, score, lives, and game state",
+    "motion": "discrete input-to-sprite movement and falling-object loops",
+    "parts": [
+      "computer or tablet that runs the Scratch editor",
+      "Scratch account or offline editor",
+      "keyboard or accessible input device"
+    ],
+    "steps": [
+      "Define the game states",
+      "Build the player",
+      "Reset on green flag"
+    ],
+    "losses": [
+      "frame timing",
+      "collision edge cases",
+      "duplicate events"
+    ],
+    "builderMoment": "The clone was supposed to fall once. It had other ideas about concurrency."
+  },
+  {
+    "slug": "reaction-time-game",
+    "title": "Reaction-Time Game",
+    "category": "Coding/game projects",
+    "input": "spacebar press after a visual cue",
+    "output": "reaction-time statistics",
+    "motion": "human event-to-measured software interval",
+    "parts": [
+      "computer or tablet with Scratch or equivalent editor",
+      "keyboard or accessible switch input",
+      "high-contrast original cue sprite"
+    ],
+    "steps": [
+      "Plan the states",
+      "Build the cue",
+      "Reset results"
+    ],
+    "losses": [
+      "screen refresh",
+      "keyboard latency",
+      "anticipation"
+    ],
+    "builderMoment": "The game said false start. The spacebar said it was merely enthusiastic."
+  },
+  {
+    "slug": "gear-ratio-simulator",
+    "title": "Gear-Ratio Simulator",
+    "category": "Coding/game projects",
+    "input": "driver tooth count and input speed",
+    "output": "calculated driven speed, torque multiplier, and animation",
+    "motion": "numeric input-to-modeled rotary motion",
+    "parts": [
+      "computer with a modern browser",
+      "plain-text code editor",
+      "local project folder"
+    ],
+    "steps": [
+      "Define the model",
+      "Build labeled inputs",
+      "Validate values"
+    ],
+    "losses": [
+      "ideal-model assumptions",
+      "display frame timing",
+      "rounding"
+    ],
+    "builderMoment": "The model had zero friction and therefore no opinion about the frame you would need in real life."
+  },
+  {
+    "slug": "virtual-robot-maze",
+    "title": "Virtual Robot Maze",
+    "category": "Coding/game projects",
+    "input": "queued forward, left, and right commands",
+    "output": "validated robot position and heading",
+    "motion": "discrete command sequence-to-grid navigation",
+    "parts": [
+      "computer with modern browser",
+      "plain-text editor",
+      "local folder"
+    ],
+    "steps": [
+      "Define the grid",
+      "Store robot state",
+      "Build turn logic"
+    ],
+    "losses": [
+      "off-by-one errors",
+      "coordinate confusion",
+      "stale command state"
+    ],
+    "builderMoment": "The virtual robot did not hit the wall. It submitted a collision error with coordinates."
+  },
+  {
+    "slug": "makecode-physics-platformer",
+    "title": "MakeCode Physics Platformer",
+    "category": "Coding/game projects",
+    "input": "left, right, and jump button events",
+    "output": "player motion, score, lives, and level completion",
+    "motion": "digital input-to-velocity-based sprite motion",
+    "parts": [
+      "computer or tablet that runs MakeCode Arcade",
+      "approved account or offline-capable editor",
+      "keyboard or game controller"
+    ],
+    "steps": [
+      "Plan the level",
+      "Create player physics",
+      "Build the tilemap"
+    ],
+    "losses": [
+      "frame-rate assumptions",
+      "double jumps",
+      "tile-edge collisions"
+    ],
+    "builderMoment": "The player collected every coin and found one tile edge with a strong opinion about momentum."
+  }
+]

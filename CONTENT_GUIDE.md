@@ -1,53 +1,88 @@
-# BricklabClips Content Guide
+# BrickLabClips Content Guide
 
-Most public site copy and editable data lives in `src/data/siteContent.ts`.
+Public site copy lives in `src/data/siteContent.ts`. Complete build-guide articles live in `src/content/guides/` and are registered in `src/content/guides/registry.ts`.
 
-## Update audience stats
+## Update site facts
 
-Edit `siteContent.audienceStats`.
+- Audience reach: edit `siteContent.audienceStats`.
+- School impact: edit `siteContent.impactStats` using confirmed values only.
+- Devpost: set `NEXT_PUBLIC_HACKATHON_DEVPOST_URL`.
+- Logo: replace `public/images/bricklabs-logo.jpg` or update `siteContent.brand.logoPath`.
+- Founder deck: replace both `public/docs/founder-deck/page-*.png` and `public/docs/founder-stem-advocacy.pdf`.
 
-Keep the public labels short and visitor-friendly. Use internal notes or analytics screenshots for detailed sourcing instead of adding caveats to the homepage UI.
+## Add or edit a guide
 
-## Update impact metrics
+Guides are grouped by category:
 
-Edit `siteContent.impactStats`.
+- `src/content/guides/brick-compatible/guides.ts`
+- `src/content/guides/cardboard/guides.ts`
+- `src/content/guides/household/guides.ts`
+- `src/content/guides/classroom/guides.ts`
+- `src/content/guides/robotics/guides.ts`
+- `src/content/guides/coding/guides.ts`
 
-Use only real funded/request data. If a metric is still at launch stage, keep the value honest and use the dashboard note already on the Home page.
+Each entry is a typed `GuideBlueprint`. Use a lowercase, hyphenated, permanent slug. Write a unique description, hook, measurable finished result, mechanism inputs and outputs, materials with quantities and purposes, project-specific safety, eight or more meaningful steps, a worked math example, controlled test, four troubleshooting rows, tuning tradeoffs, three extensions, and three to six related slugs.
 
-## Update the Devpost URL
+The factory adds shared article structure, but the engineering details in every blueprint must remain project-specific. Do not produce a new article by replacing only the project noun in another guide.
 
-Set this environment variable:
+## Steps and concepts
 
-```bash
-NEXT_PUBLIC_HACKATHON_DEVPOST_URL=https://your-devpost-url
+Each step uses this format:
+
+```ts
+"Action title|Specific placement, dimension, or connection instruction.|Checkpoint detail or likely mistake."
 ```
 
-The Hackathon page shows "Devpost page coming soon." when the value is empty.
+The guide renderer places checkpoints after major subassemblies and associates the three generated instructional panels with the ordered steps. Essential instructions must remain in HTML; an image cannot be the only source of a measurement or safety rule.
 
-## Add a build guide
+## Electronics and code
 
-Add a new item to `siteContent.library.guides`.
+Electronics guides need a `wiring` table that states source, destination, and purpose. Include battery voltage, polarity, current limiting, motor driver or transistor requirements, flyback protection, and common ground where applicable. Never use mains electricity.
 
-Each guide supports:
+Coding guides need a complete `code` object with language, filename, source, and explanation. Source shown inline must run without missing libraries or private assets. If an article later links to a downloadable file, commit that file under `public/downloads/` and extend the validator to check it.
 
-- `title`
-- `category`
-- `difficulty`
-- `estimatedTime`
-- `estimatedCost`
-- `materials`
-- `alternatives`
-- `concepts`
-- `description`
-- `videoUrl`
-- `status`
+## Verification basis
 
-Use `status: "draft"` for starter drafts, `status: "coming-soon"` for placeholders, and `status: "published"` only after the guide has been written, checked, and linked to your own demo or video.
+Use one internal value:
 
-When you send the BricklabClips TikTok video list, paste each video URL into the matching guide's `videoUrl` field.
+- `bricklabs-video-demonstrated`
+- `standard-mechanism`
+- `dimensionally-specified-classroom-build`
+- `code-executed`
+- `circuit-checked`
+- `editorial-geometry-review`
 
-Do not copy official LEGO instructions, official imagery, official packaging, or proprietary assets. Use original builds, original photos/video, or neutral diagrams.
+This records the editorial basis; it is not permission to claim physical testing. Only use `bricklabs-video-demonstrated` after verifying the exact public BrickLabClips post.
 
-## Founder background deck
+## TikTok mapping
 
-The founder background modal uses slide images in `public/docs/founder-deck/` and keeps `public/docs/founder-stem-advocacy.pdf` as the full PDF link. Replace both if you update the slideshow later.
+Record verified posts in `src/content/tiktok/bricklabclips-video-manifest.json`. Use only URLs matching `https://www.tiktok.com/@bricklabclips/video/[post-id]`, and record the visible caption, date, mechanism, candidate slug, and confidence. Never infer a post URL or hidden assembly detail.
+
+Add a guide `video` field only after the manifest entry is verified. Guides without a match intentionally show no video placeholder.
+
+## Visual assets
+
+Generate the six original local SVGs for every registered guide:
+
+```bash
+npm run generate:guide-art
+```
+
+The command writes `hero.svg`, three step panels, `concept.svg`, and `builder-moment.svg` under `public/guides/[slug]/`. Review generated labels and geometry before publishing. See `GUIDE_ASSET_GUIDE.md`.
+
+## Required checks
+
+```bash
+npm run generate:guide-art
+npm run validate:guides
+npm run lint
+npm run typecheck
+npm test
+npm run build
+```
+
+The validator enforces the exact published count, metadata, depth, unique content, safety, steps, math, testing, troubleshooting, related links, TikTok ownership, and local assets. Never bypass it to publish an incomplete guide.
+
+## Copyright and brand rules
+
+Use original BrickLabClips text and diagrams. Do not copy official LEGO instructions, kit manuals, product imagery, packaging, proprietary MOCs, other creators' posts, copyrighted meme templates, or third-party article prose. Use “brick-compatible” for generic mechanisms and retain the site's independent LEGO trademark disclaimer.
