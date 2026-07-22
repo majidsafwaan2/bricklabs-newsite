@@ -27,9 +27,9 @@ export const metadata: Metadata = {
       "Free build guides, open student challenges, and funded school materials for hands-on building."
   },
   icons: {
-    icon: [{ url: "/images/bricklabs-logo.jpg?v=bricklabs-logo", type: "image/jpeg" }],
-    shortcut: [{ url: "/images/bricklabs-logo.jpg?v=bricklabs-logo", type: "image/jpeg" }],
-    apple: [{ url: "/images/bricklabs-logo.jpg?v=bricklabs-logo", type: "image/jpeg" }]
+    icon: [{ url: "/favicon-rounded.png?v=round-logo", type: "image/png" }],
+    shortcut: [{ url: "/favicon-rounded.png?v=round-logo", type: "image/png" }],
+    apple: [{ url: "/favicon-rounded.png?v=round-logo", type: "image/png" }]
   }
 };
 
