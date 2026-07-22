@@ -12,7 +12,7 @@
   --muted: #66645d;
   --shadow: 0 18px 50px rgba(17, 17, 17, 0.12);
   --radius: 8px;
-  --container: 1500px;
+  --container: 1340px;
 }
 
 * {
@@ -136,7 +136,7 @@ textarea {
 @media (min-width: 1000px) {
   .container,
   .nav-wrap {
-    width: min(var(--container), calc(100% - 160px));
+    width: min(var(--container), calc(100% - 210px));
   }
 }
 
@@ -339,7 +339,7 @@ textarea {
 }
 
 .hero-home .hero-copy {
-  max-width: min(560px, calc(50vw - 90px));
+  max-width: min(560px, calc(50vw - 110px));
 }
 
 .eyebrow {
@@ -399,11 +399,15 @@ textarea {
 }
 
 .hero-home .hero-stat-row {
-  max-width: min(560px, calc(50vw - 90px));
+  max-width: min(560px, calc(50vw - 110px));
 }
 
 .hero-stat-row div {
   min-width: 128px;
+  min-height: 64px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   padding: 10px 12px;
   background: rgba(255, 255, 255, 0.72);
   border: 2px solid var(--ink);
@@ -440,19 +444,20 @@ textarea {
   text-decoration: none;
 }
 
-.hero-social-link {
-  min-height: 54px;
+.hero-social-group .hero-social-link {
+  min-height: 64px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-width: 190px;
+  min-width: 205px;
   padding: 10px 16px;
   color: var(--ink);
   background: rgba(255, 255, 255, 0.72);
   border: 2px solid var(--ink);
   border-radius: var(--radius);
-  font-size: 1.12rem;
+  font-size: 1.22rem;
   font-weight: 950;
+  line-height: 1;
 }
 
 .hero-social-group:hover .hero-social-link {
@@ -460,8 +465,8 @@ textarea {
 }
 
 .hero-social-logo {
-  width: 54px;
-  height: 54px;
+  width: 64px;
+  height: 64px;
   flex: 0 0 auto;
   overflow: hidden;
   background: #000;
@@ -789,7 +794,7 @@ section[id] {
 
 @media (min-width: 1000px) {
   .founder-layout {
-    margin-left: max(80px, calc((100vw - var(--container)) / 2));
+    margin-left: max(130px, calc((100vw - var(--container)) / 2));
   }
 }
 
