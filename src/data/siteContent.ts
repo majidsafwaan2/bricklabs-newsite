@@ -20,7 +20,7 @@ export const siteContent = {
     shortDescription:
       "Build ideas, school materials, and student creations from the BricklabClips community.",
     logoPath: "/images/bricklabs-logo.jpg",
-    tiktokUrl: "https://www.tiktok.com/",
+    tiktokUrl: "https://www.tiktok.com/@bricklabclips",
     siteUrl: process.env.NEXT_PUBLIC_SITE_URL || "https://bricklabclips.org"
   },
   navLinks: [
