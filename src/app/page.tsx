@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { ButtonLink } from "@/components/ButtonLink";
 import { FounderBackground } from "@/components/FounderBackground";
 import { Hero } from "@/components/Hero";
@@ -37,14 +38,16 @@ export default function HomePage() {
             </div>
           ))}
           <a
-            className="hero-social-link"
+            className="hero-social-group"
             href={siteContent.brand.tiktokUrl}
             target="_blank"
             rel="noreferrer"
             aria-label="Visit BrickLabClips on TikTok"
           >
-            <TikTokIcon />
-            <span>@bricklabclips</span>
+            <span className="hero-social-link">@bricklabclips</span>
+            <span className="hero-social-logo" aria-hidden="true">
+              <Image src="/images/tiktok-logo-circle.png" alt="" width={256} height={256} />
+            </span>
           </a>
         </div>
       </Hero>
@@ -100,16 +103,5 @@ export default function HomePage() {
         </div>
       </section>
     </>
-  );
-}
-
-function TikTokIcon() {
-  return (
-    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-      <path
-        d="M15.6 3.2c.35 2.13 1.55 3.45 3.62 3.84v3.08a7.2 7.2 0 0 1-3.58-.98v5.78c0 3.04-2.05 5.04-5.05 5.04-2.77 0-4.93-1.94-4.93-4.54 0-2.86 2.36-4.87 5.4-4.47v3.16c-1.1-.34-2.14.24-2.14 1.3 0 .89.75 1.48 1.65 1.48 1.04 0 1.72-.66 1.72-1.88V3.2h3.31Z"
-        fill="currentColor"
-      />
-    </svg>
   );
 }
