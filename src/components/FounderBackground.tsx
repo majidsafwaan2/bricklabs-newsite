@@ -34,8 +34,13 @@ export function FounderBackground() {
   return (
     <section className="section">
       <div className="container founder-layout">
-        <div className="founder-photo-placeholder" aria-label="Founder photo placeholder">
-          <span>Founder photo</span>
+        <div className="founder-photo">
+          <Image
+            src="/images/founder-safwaan.png"
+            alt="Safwaan, founder of BrickLabClips."
+            width={818}
+            height={856}
+          />
         </div>
         <div className="founder-copy">
           <p className="eyebrow">Founder background</p>

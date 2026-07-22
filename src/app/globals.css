@@ -364,11 +364,23 @@ textarea {
 
 .hero-illustration {
   position: absolute;
-  right: max(-120px, calc((100vw - 1280px) / 2));
-  bottom: -4px;
-  width: min(50vw, 650px);
-  min-width: 470px;
-  pointer-events: none;
+  right: max(24px, calc((100vw - 1240px) / 2));
+  bottom: 54px;
+  width: min(45vw, 600px);
+  overflow: hidden;
+  background: var(--paper);
+  border: 3px solid var(--ink);
+  border-radius: 24px;
+  box-shadow: var(--shadow);
+  transform: rotate(1.5deg);
+}
+
+.hero-illustration img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
 }
 
 .hero-stat-row {
@@ -719,25 +731,22 @@ section[id] {
   max-width: 1040px;
 }
 
-.founder-photo-placeholder {
-  display: grid;
-  min-height: 360px;
-  place-items: center;
-  color: var(--muted);
-  background:
-    linear-gradient(135deg, rgba(255, 212, 51, 0.18), rgba(47, 128, 237, 0.08)),
-    var(--paper);
-  border: 3px dashed var(--ink);
+.founder-photo {
+  overflow: hidden;
+  width: 100%;
+  max-width: 420px;
+  background: var(--paper);
+  border: 3px solid var(--ink);
   border-radius: 22px;
+  box-shadow: var(--shadow);
 }
 
-.founder-photo-placeholder span {
-  display: inline-flex;
-  padding: 10px 14px;
-  background: var(--paper);
-  border: 2px solid var(--ink);
-  border-radius: 999px;
-  font-weight: 950;
+.founder-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1.05;
+  object-fit: cover;
 }
 
 .founder-copy {
@@ -1513,14 +1522,14 @@ section[id] {
   }
 
   .hero-home .hero-content {
-    padding: 76px 0 340px;
+    padding: 76px 0 420px;
   }
 
   .hero-illustration {
     right: 50%;
-    bottom: -26px;
-    width: 680px;
-    transform: translateX(54%);
+    bottom: 34px;
+    width: min(82vw, 620px);
+    transform: translateX(50%) rotate(1deg);
   }
 
   .stat-strip,
@@ -1538,6 +1547,10 @@ section[id] {
   .two-column,
   .challenge-grid {
     grid-template-columns: 1fr;
+  }
+
+  .founder-photo {
+    justify-self: center;
   }
 
 }
@@ -1575,7 +1588,7 @@ section[id] {
   }
 
   .hero-home .hero-content {
-    padding: 68px 0 300px;
+    padding: 68px 0 390px;
   }
 
   .hero-description {
@@ -1592,9 +1605,8 @@ section[id] {
   }
 
   .hero-illustration {
-    min-width: 500px;
-    width: 560px;
-    transform: translateX(56%);
+    width: min(92vw, 520px);
+    transform: translateX(50%) rotate(0.8deg);
   }
 
   .section {
@@ -1644,10 +1656,6 @@ section[id] {
 
   .founder-layout {
     gap: 26px;
-  }
-
-  .founder-photo-placeholder {
-    min-height: 260px;
   }
 
   .featured-guide-card,
