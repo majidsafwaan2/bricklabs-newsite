@@ -409,6 +409,7 @@ textarea {
   flex-direction: column;
   justify-content: center;
   padding: 10px 12px;
+  text-align: center;
   background: rgba(255, 255, 255, 0.72);
   border: 2px solid var(--ink);
   border-radius: var(--radius);
@@ -465,8 +466,8 @@ textarea {
 }
 
 .hero-social-logo {
-  width: 64px;
-  height: 64px;
+  width: 58px;
+  height: 58px;
   flex: 0 0 auto;
   overflow: hidden;
   background: #000;
