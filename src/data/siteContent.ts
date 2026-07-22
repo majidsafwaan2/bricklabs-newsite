@@ -40,10 +40,10 @@ export const siteContent = {
     { label: "Followers", value: "20.4K" }
   ],
   impactStats: [
-    { label: "Parts given to schools", value: "0" },
-    { label: "Schools supported", value: "0" },
-    { label: "Materials funded", value: "$0" },
-    { label: "Students reached", value: "0" },
+    { label: "Parts given to schools", value: "1,300+" },
+    { label: "Schools supported", value: "2" },
+    { label: "Materials raised", value: "$2,000+" },
+    { label: "Students reached", value: "55+" },
     { label: "Build guides live", value: "0" },
     { label: "2026 goal", value: "10 requests" }
   ],
