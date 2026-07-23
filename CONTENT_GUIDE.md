@@ -33,7 +33,7 @@ Each step uses this format:
 "Action title|Specific placement, dimension, or connection instruction.|Checkpoint detail or likely mistake."
 ```
 
-The guide renderer places checkpoints after major subassemblies and associates the three generated instructional panels with the ordered steps. Essential instructions must remain in HTML; an image cannot be the only source of a measurement or safety rule.
+The guide renderer places checkpoints after major subassemblies. Build steps are text-first: essential dimensions, orientation, safety, and testing details must remain in HTML. Add a technical diagram only when it communicates necessary information that the prose cannot show as clearly.
 
 ## Electronics and code
 
@@ -62,13 +62,13 @@ Add a guide `video` field only after the manifest entry is verified. Guides with
 
 ## Visual assets
 
-Generate the six original local SVGs for every registered guide:
+Generate the original motion-and-energy map for every registered guide:
 
 ```bash
 npm run generate:guide-art
 ```
 
-The command writes `hero.svg`, three step panels, `concept.svg`, and `builder-moment.svg` under `public/guides/[slug]/`. Review generated labels and geometry before publishing. See `GUIDE_ASSET_GUIDE.md`.
+The command writes `concept.svg` under `public/guides/[slug]/`. Add optional authorized cover photos and their metadata in `src/content/guides/media.ts`; guides without a photo use a text-only cover. Build steps do not use generated reference panels, and every guide uses the shared owner-supplied Builder Moment image. See `GUIDE_ASSET_GUIDE.md`.
 
 ## Required checks
 
@@ -85,4 +85,4 @@ The validator enforces the exact published count, metadata, depth, unique conten
 
 ## Copyright and brand rules
 
-Use original BrickLabClips text and diagrams. Do not copy official LEGO instructions, kit manuals, product imagery, packaging, proprietary MOCs, other creators' posts, copyrighted meme templates, or third-party article prose. Use “brick-compatible” for generic mechanisms and retain the site's independent LEGO trademark disclaimer.
+Use original BrickLabClips text and diagrams. Do not copy official LEGO instructions, kit manuals, product imagery, packaging, proprietary MOCs, other creators' posts, or third-party article prose. Add third-party media only when the site owner supplied it or reuse permission is documented in the typed photo metadata. Use “brick-compatible” for generic mechanisms and retain the site's independent LEGO trademark disclaimer.

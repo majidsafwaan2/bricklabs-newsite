@@ -15,11 +15,36 @@ for (const [path, title] of representativeGuides) {
     await expect(page.getByRole("heading", { level: 1, name: title })).toBeVisible();
     await expect(page.getByRole("heading", { name: "Step-by-step instructions" })).toBeVisible();
     await expect(page.locator(".build-step-list > li")).toHaveCount(8);
+    await expect(page.locator(".build-step figure")).toHaveCount(0);
     await expect(page.getByRole("heading", { name: "Test, troubleshoot, and tune" })).toBeVisible();
     await expect(page.locator(".troubleshooting-table-wrap tbody tr")).toHaveCount(4);
-    await expect(page.locator(".guide-hero-visual img")).toHaveJSProperty("complete", true);
+    const conceptMap = page.locator(".concept-figure img");
+    await conceptMap.scrollIntoViewIfNeeded();
+    await expect(conceptMap).toHaveJSProperty("complete", true);
+    expect(await conceptMap.evaluate((image: HTMLImageElement) => image.naturalWidth)).toBeGreaterThan(0);
+
+    const builderMoment = page.locator(".builder-moment img");
+    await builderMoment.scrollIntoViewIfNeeded();
+    await expect(builderMoment).toHaveJSProperty("complete", true);
+    expect(await builderMoment.evaluate((image: HTMLImageElement) => image.naturalWidth)).toBeGreaterThan(0);
   });
 }
+
+test("supplied covers and text-only fallbacks are used honestly", async ({ page }) => {
+  await page.goto("/library/gear-ratio-demonstrator");
+  await expect(page.locator(".guide-hero-visual img")).toHaveAttribute("src", /gear-ratio-example/);
+  await expect(page.locator(".guide-hero-visual figcaption")).toContainText("different frame");
+
+  await page.goto("/library/planetary-gearset");
+  await expect(page.locator(".guide-article-hero")).toHaveClass(/text-only/);
+  await expect(page.locator(".guide-hero-visual")).toHaveCount(0);
+});
+
+test("every Builder Moment uses the supplied meme image", async ({ page }) => {
+  await page.goto("/library/pulley-elevator");
+  await expect(page.locator(".builder-moment img")).toHaveAttribute("src", /chuck-norris-builder-meme/);
+  await expect(page.locator(".builder-moment figcaption")).toContainText("Image supplied by the site owner");
+});
 
 test("guide structured data parses and matches visible content", async ({ page }) => {
   await page.goto("/library/gear-ratio-demonstrator");
@@ -30,6 +55,7 @@ test("guide structured data parses and matches visible content", async ({ page }
   expect(howTo.name).toBe("Gear Ratio Demonstrator");
   expect(howTo.step.length).toBeGreaterThanOrEqual(8);
   expect(howTo.supply.length).toBeGreaterThanOrEqual(5);
+  expect(howTo.step.every((step: { image?: string }) => !("image" in step))).toBe(true);
 });
 
 test("related guide links resolve and invalid slugs return 404", async ({ page, request }) => {

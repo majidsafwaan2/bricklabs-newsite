@@ -451,8 +451,8 @@ textarea {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-width: 205px;
-  padding: 10px 16px;
+  min-width: 184px;
+  padding: 10px 12px;
   color: var(--ink);
   background: rgba(255, 255, 255, 0.72);
   border: 2px solid var(--ink);
@@ -467,8 +467,8 @@ textarea {
 }
 
 .hero-social-logo {
-  width: 54px;
-  height: 54px;
+  width: 52px;
+  height: 52px;
   flex: 0 0 auto;
   overflow: hidden;
   background: #000;
@@ -1839,6 +1839,32 @@ section[id] {
   transition: transform 180ms ease;
 }
 
+.guide-card-text-cover {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 22px;
+  color: var(--ink);
+  background: var(--yellow);
+}
+
+.guide-card-text-cover small {
+  max-width: 22ch;
+  font-size: 0.72rem;
+  font-weight: 950;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.guide-card-text-cover strong {
+  max-width: 13ch;
+  font-size: clamp(1.45rem, 2.2vw, 2.15rem);
+  line-height: 0.98;
+}
+
 .guide-card:hover .guide-card-image img {
   transform: scale(1.025);
 }
@@ -1936,6 +1962,11 @@ section[id] {
   align-items: center;
 }
 
+.guide-article-hero.text-only .guide-article-hero-grid {
+  grid-template-columns: minmax(0, 850px);
+  justify-content: start;
+}
+
 .breadcrumbs ol {
   display: flex;
   flex-wrap: wrap;
@@ -1985,10 +2016,40 @@ section[id] {
   box-shadow: 14px 14px 0 rgba(17, 17, 17, 0.13);
 }
 
-.guide-hero-visual img {
+.guide-photo-frame {
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  background: var(--paper-soft);
+}
+
+.guide-photo-frame img {
   display: block;
   width: 100%;
-  height: auto;
+  height: 100%;
+}
+
+.guide-hero-visual figcaption,
+.builder-moment figcaption {
+  display: grid;
+  gap: 5px;
+  padding: 12px 14px;
+}
+
+.guide-hero-visual figcaption span {
+  color: var(--ink-soft);
+  font-size: 0.84rem;
+  line-height: 1.4;
+}
+
+.guide-hero-visual figcaption small,
+.builder-moment figcaption small {
+  color: var(--muted);
+  font-size: 0.74rem;
+}
+
+.guide-hero-visual figcaption a,
+.builder-moment figcaption a {
+  color: inherit;
 }
 
 .guide-article-shell {
@@ -2211,7 +2272,7 @@ section[id] {
 
 .build-step-list {
   display: grid;
-  gap: 42px;
+  gap: 22px;
   margin: 34px 0 0;
   padding: 0;
   list-style: none;
@@ -2219,32 +2280,14 @@ section[id] {
 }
 
 .build-step {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(280px, 0.85fr);
-  gap: 28px;
-  align-items: center;
+  padding: 26px 28px;
+  background: var(--paper-soft);
+  border: 2px solid var(--ink);
+  border-left: 8px solid var(--yellow);
+  border-radius: var(--radius);
   scroll-margin-top: 120px;
 }
 
-.build-step:nth-child(even) .build-step-copy {
-  order: 2;
-}
-
-.build-step figure {
-  overflow: hidden;
-  margin: 0;
-  background: var(--paper-soft);
-  border: 2px solid var(--ink);
-  border-radius: var(--radius);
-}
-
-.build-step figure img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-.build-step figcaption,
 .concept-figure figcaption {
   padding: 8px 10px;
   color: var(--muted);
@@ -2444,8 +2487,12 @@ section[id] {
 }
 
 .builder-moment {
-  overflow: hidden;
+  display: grid;
+  grid-template-columns: minmax(220px, 0.58fr) minmax(0, 1fr);
+  gap: 24px;
+  align-items: center;
   margin: 28px 0 0;
+  padding: 24px;
   background: var(--ink);
   border: 2px solid var(--ink);
   border-radius: var(--radius);
@@ -2453,15 +2500,23 @@ section[id] {
 
 .builder-moment img {
   display: block;
-  width: 100%;
+  width: min(100%, 377px);
   height: auto;
+  justify-self: center;
+  border-radius: 5px;
 }
 
 .builder-moment figcaption {
-  padding: 12px 16px;
   color: var(--paper);
+  font-size: 1.18rem;
   font-weight: 900;
-  text-align: center;
+  line-height: 1.35;
+  text-align: left;
+}
+
+.builder-moment figcaption small {
+  color: #bdbdb6;
+  font-weight: 700;
 }
 
 .test-plan {
@@ -2595,11 +2650,17 @@ section[id] {
   text-decoration: none;
 }
 
-.related-guides img {
+.related-guide-media {
+  aspect-ratio: 3 / 2;
+  overflow: hidden;
+  background: var(--yellow-soft);
+  border-bottom: 2px solid var(--ink);
+}
+
+.related-guide-media img {
   display: block;
   width: 100%;
-  height: auto;
-  border-bottom: 2px solid var(--ink);
+  height: 100%;
 }
 
 .related-guides span,
@@ -2699,13 +2760,13 @@ section[id] {
     padding-top: 52px;
   }
 
-  .build-step,
-  .build-step:nth-child(even) {
+  .builder-moment {
     grid-template-columns: 1fr;
+    padding: 18px;
   }
 
-  .build-step:nth-child(even) .build-step-copy {
-    order: initial;
+  .builder-moment figcaption {
+    text-align: center;
   }
 
   .guide-mission-cta {

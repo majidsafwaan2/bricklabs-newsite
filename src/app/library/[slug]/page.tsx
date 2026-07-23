@@ -24,6 +24,7 @@ export async function generateMetadata({ params }: GuidePageProps): Promise<Meta
 
   const canonical = `${siteContent.brand.siteUrl}/library/${guide.slug}`;
   const title = `${guide.title} Build Guide`;
+  const photo = guide.coverPhoto;
 
   return {
     title,
@@ -36,13 +37,13 @@ export async function generateMetadata({ params }: GuidePageProps): Promise<Meta
       url: canonical,
       publishedTime: guide.publishedAt,
       modifiedTime: guide.updatedAt,
-      images: [{ url: guide.heroImage, width: 1200, height: 800, alt: guide.heroAlt }]
+      images: photo ? [{ url: photo.src, width: photo.width, height: photo.height, alt: photo.alt }] : undefined
     },
     twitter: {
-      card: "summary_large_image",
+      card: photo ? "summary_large_image" : "summary",
       title,
       description: guide.description,
-      images: [guide.heroImage]
+      images: photo ? [photo.src] : undefined
     }
   };
 }
@@ -65,7 +66,7 @@ export default async function GuidePage({ params }: GuidePageProps) {
     "@type": "HowTo",
     name: guide.title,
     description: guide.description,
-    image: `${siteContent.brand.siteUrl}${guide.heroImage}`,
+    ...(guide.coverPhoto ? { image: `${siteContent.brand.siteUrl}${guide.coverPhoto.src}` } : {}),
     totalTime: `PT${guide.timeMinutes}M`,
     estimatedCost: { "@type": "MonetaryAmount", currency: "USD", value: String(guide.maxCost) },
     supply: guide.materials.map((material) => ({ "@type": "HowToSupply", name: `${material.quantity} ${material.item}` })),
@@ -75,7 +76,6 @@ export default async function GuidePage({ params }: GuidePageProps) {
       position: index + 1,
       name: step.title,
       text: step.instructions.join(" "),
-      image: `${siteContent.brand.siteUrl}${step.visual.src}`,
       url: `${canonical}#${step.id}`
     }))
   };

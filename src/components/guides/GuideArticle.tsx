@@ -5,7 +5,9 @@ import type { GuideArticle as GuideArticleType, GuideSummary } from "@/content/g
 import { BuildStep } from "./BuildStep";
 import { GuideHero } from "./GuideHero";
 import { GuideQuickFacts } from "./GuideQuickFacts";
+import { GuideThumbnail } from "./GuideThumbnail";
 import { MaterialsChecklist } from "./MaterialsChecklist";
+import { PhotoCaption } from "./PhotoCaption";
 import { PrintButton } from "./PrintButton";
 import { TikTokEmbed } from "./TikTokEmbed";
 
@@ -78,7 +80,15 @@ export function GuideArticle({ guide, related }: { guide: GuideArticleType; rela
             <div className="concept-grid">{guide.conceptPauses.map((pause) => <div className="concept-pause" key={pause.title}><p className="eyebrow">{pause.title}</p><h3>{pause.concept}</h3><p>{pause.explanation}</p><p><strong>Look for:</strong> {pause.observe}</p></div>)}</div>
             <div className="math-bite"><p className="eyebrow">Math bite</p><h3>{guide.mathBite.title}</h3><p><strong>Formula:</strong> <code>{guide.mathBite.formula}</code></p><ul>{guide.mathBite.variables.map((variable) => <li key={variable}>{variable}</li>)}</ul><p><strong>Substitute:</strong> {guide.mathBite.substitution}</p><p><strong>Result:</strong> {guide.mathBite.result}</p><p>{guide.mathBite.interpretation}</p><small>{guide.mathBite.assumptions}</small></div>
             {guide.code ? <div className="code-panel"><h3>{guide.code.filename}</h3><p>{guide.code.explanation}</p><pre><code>{guide.code.source}</code></pre></div> : null}
-            <figure className="builder-moment"><Image src={guide.humorVisual.src} alt={guide.humorVisual.alt} width={1200} height={560} /><figcaption>{guide.builderMoment}</figcaption></figure>
+            <figure className="builder-moment">
+              <Image
+                src={guide.builderMomentPhoto.src}
+                alt={guide.builderMomentPhoto.alt}
+                width={guide.builderMomentPhoto.width}
+                height={guide.builderMomentPhoto.height}
+              />
+              <PhotoCaption photo={guide.builderMomentPhoto} caption={guide.builderMoment} />
+            </figure>
           </section>
 
           <section id="testing" className="article-section">
@@ -105,7 +115,7 @@ export function GuideArticle({ guide, related }: { guide: GuideArticleType; rela
 
           <section className="article-section source-notes"><h2>Sources and build notes</h2><p>{guide.sourceType}</p><ul>{guide.sources.map((source) => <li key={source.label}>{source.href ? <a href={source.href} target="_blank" rel="noreferrer">{source.label}</a> : <strong>{source.label}</strong>}: {source.note}</li>)}</ul><p className="editor-note">Written and edited by BrickLabClips. Published {guide.publishedAt}; updated {guide.updatedAt}.</p></section>
 
-          {related.length > 0 ? <section className="article-section related-guides"><p className="eyebrow">Next builds</p><h2>Related guides</h2><div>{related.map((item) => <Link key={item.slug} href={`/library/${item.slug}`}><Image src={item.heroImage} alt="" width={560} height={360} /><span>{item.category}</span><h3>{item.title}</h3><p>{item.description}</p></Link>)}</div></section> : null}
+          {related.length > 0 ? <section className="article-section related-guides"><p className="eyebrow">Next builds</p><h2>Related guides</h2><div>{related.map((item) => <Link key={item.slug} href={`/library/${item.slug}`}><div className="related-guide-media"><GuideThumbnail guide={item} sizes="(max-width: 760px) calc(100vw - 60px), 280px" /></div><span>{item.category}</span><h3>{item.title}</h3><p>{item.description}</p></Link>)}</div></section> : null}
         </div>
       </div>
     </article>

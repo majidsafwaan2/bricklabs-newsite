@@ -1,10 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
 import type { GuideArticle } from "@/content/guides/types";
+import { PhotoCaption } from "./PhotoCaption";
 
 export function GuideHero({ guide }: { guide: GuideArticle }) {
+  const photo = guide.coverPhoto;
+
   return (
-    <header className="guide-article-hero">
+    <header className={`guide-article-hero ${photo ? "has-cover-photo" : "text-only"}`}>
       <div className="container guide-article-hero-grid">
         <div className="guide-article-heading">
           <nav className="breadcrumbs" aria-label="Breadcrumb">
@@ -19,9 +22,21 @@ export function GuideHero({ guide }: { guide: GuideArticle }) {
           <p className="guide-deck">{guide.description}</p>
           <p className="guide-hook">{guide.hook}</p>
         </div>
-        <figure className="guide-hero-visual">
-          <Image src={guide.heroImage} alt={guide.heroAlt} width={1200} height={800} priority />
-        </figure>
+        {photo ? (
+          <figure className="guide-hero-visual">
+            <div className="guide-photo-frame">
+              <Image
+                src={photo.src}
+                alt={photo.alt}
+                width={photo.width}
+                height={photo.height}
+                priority
+                style={{ objectFit: photo.fit ?? "cover", objectPosition: photo.focalPoint ?? "center" }}
+              />
+            </div>
+            <PhotoCaption photo={photo} />
+          </figure>
+        ) : null}
       </div>
     </header>
   );

@@ -12,6 +12,8 @@ test.describe("build guide directory", () => {
     const cardLinks = await page.locator(".guide-card h2 a").evaluateAll((links) => links.map((link) => link.getAttribute("href")));
     expect(cardLinks).toHaveLength(125);
     expect(new Set(cardLinks)).toEqual(new Set(guideSummaries.map((guide) => `/library/${guide.slug}`)));
+    await expect(page.locator(".guide-thumbnail-photo")).toHaveCount(8);
+    await expect(page.locator(".guide-card-text-cover")).toHaveCount(117);
   });
 
   test("search finds titles, concepts, and materials", async ({ page }) => {

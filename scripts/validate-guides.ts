@@ -1,6 +1,7 @@
 import { existsSync, readFileSync } from "node:fs";
 import { join } from "node:path";
 import { allGuides } from "../src/content/guides/registry";
+import { suppliedCoverPhotoCount } from "../src/content/guides/media";
 import { GUIDE_CATEGORIES, GUIDE_DIFFICULTIES } from "../src/content/guides/types";
 import videoManifest from "../src/content/tiktok/bricklabclips-video-manifest.json";
 
@@ -15,7 +16,8 @@ const expectedCategoryCounts: Record<string, number> = {
   "Robotics/electronics": 20,
   "Coding/game projects": 5
 };
-const requiredAssets = ["hero.svg", "step-01.svg", "step-02.svg", "step-03.svg", "concept.svg", "builder-moment.svg"];
+const requiredAssets = ["concept.svg"];
+const obsoleteGeneratedAssets = ["hero.svg", "step-01.svg", "step-02.svg", "step-03.svg", "builder-moment.svg"];
 const placeholderPattern = /\b(coming soon|todo|tbd|lorem ipsum|add image|insert video|write this later|starter draft)\b/i;
 const exactTikTokPattern = /^https:\/\/(?:www\.)?tiktok\.com\/@bricklabclips\/video\/\d+(?:\?.*)?$/;
 
@@ -87,7 +89,13 @@ for (const guide of allGuides) {
   if (!GUIDE_CATEGORIES.includes(guide.category)) fail(`${prefix} invalid category.`);
   if (!GUIDE_DIFFICULTIES.includes(guide.difficulty)) fail(`${prefix} invalid difficulty.`);
   if (guide.description.trim().length < 45) fail(`${prefix} description is too short.`);
-  if (!guide.heroImage || !guide.heroAlt || guide.heroAlt.length < 25) fail(`${prefix} missing hero image or useful alt text.`);
+  if (guide.coverPhoto) {
+    if (guide.coverPhoto.alt.length < 25 || guide.coverPhoto.caption.length < 45) fail(`${prefix} cover photo needs useful alt text and an honest caption.`);
+    if (guide.coverPhoto.width < 300 || guide.coverPhoto.height < 300) fail(`${prefix} cover photo dimensions are too small.`);
+    if (!existsSync(join(root, "public", guide.coverPhoto.src))) fail(`${prefix} missing cover photo ${guide.coverPhoto.src}.`);
+    if (["cc-by", "cc-by-sa"].includes(guide.coverPhoto.sourceType) && (!guide.coverPhoto.creator || !guide.coverPhoto.sourceUrl || !guide.coverPhoto.licenseName || !guide.coverPhoto.licenseUrl)) fail(`${prefix} licensed cover photo lacks attribution metadata.`);
+  }
+  if (!guide.builderMomentPhoto.alt || !existsSync(join(root, "public", guide.builderMomentPhoto.src))) fail(`${prefix} missing Builder Moment photo or alt text.`);
   if (guide.materials.length < 5 || guide.materials.some((item) => !item.quantity || !item.item || !item.purpose)) fail(`${prefix} materials need quantities, items, and purposes.`);
   if (guide.tools.length < 2) fail(`${prefix} needs at least two tools.`);
   if (guide.alternatives.length < 3) fail(`${prefix} needs at least three substitutions.`);
@@ -96,7 +104,7 @@ for (const guide of allGuides) {
   if (guide.steps.length < 8 || guide.steps.length > 18) fail(`${prefix} must contain 8-18 build steps.`);
   if (guide.steps.filter((step) => step.checkpoint).length < 3) fail(`${prefix} needs at least three checkpoints.`);
   if (new Set(guide.steps.map((step) => step.id)).size !== guide.steps.length) fail(`${prefix} has duplicate step IDs.`);
-  if (guide.steps.some((step) => step.instructions.length < 2 || !step.visual.src || !step.visual.alt)) fail(`${prefix} has an incomplete build step or visual.`);
+  if (guide.steps.some((step) => step.instructions.length < 2)) fail(`${prefix} has an incomplete build step.`);
   if (guide.conceptPauses.length < 2 || guide.conceptPauses.some((pause) => pause.explanation.length < 50)) fail(`${prefix} needs two substantial concept pauses.`);
   if (!guide.mathBite.formula || guide.mathBite.variables.length < 2 || !guide.mathBite.result || !guide.mathBite.assumptions) fail(`${prefix} has an incomplete worked math example.`);
   if (!guide.testing.firstTest || !guide.testing.success || guide.testing.trials.length < 3) fail(`${prefix} has an incomplete test plan.`);
@@ -115,12 +123,15 @@ for (const guide of allGuides) {
   if (guide.video && !exactTikTokPattern.test(guide.video.url)) fail(`${prefix} has an unverified or non-BrickLabClips TikTok URL.`);
   if (placeholderPattern.test(JSON.stringify(guide))) fail(`${prefix} contains public placeholder language.`);
 
-  const expectedVisualPaths = [guide.heroImage, guide.conceptVisual.src, guide.humorVisual.src, ...guide.steps.map((step) => step.visual.src)];
+  const expectedVisualPaths = [guide.conceptVisual.src, guide.builderMomentPhoto.src, ...(guide.coverPhoto ? [guide.coverPhoto.src] : [])];
   for (const path of new Set(expectedVisualPaths)) {
-    if (!path.startsWith("/guides/") || !existsSync(join(root, "public", path))) fail(`${prefix} missing local visual ${path}.`);
+    if (!path.startsWith("/") || !existsSync(join(root, "public", path))) fail(`${prefix} missing local visual ${path}.`);
   }
   for (const file of requiredAssets) {
     if (!existsSync(join(root, "public", "guides", guide.slug, file))) fail(`${prefix} missing required asset ${file}.`);
+  }
+  for (const file of obsoleteGeneratedAssets) {
+    if (existsSync(join(root, "public", "guides", guide.slug, file))) fail(`${prefix} still contains obsolete generated asset ${file}.`);
   }
 
   const minimumWords = guide.difficulty === "Beginner" ? 900 : guide.difficulty === "Intermediate" ? 1000 : 1100;
@@ -190,13 +201,17 @@ if (videoManifest.videos.length === 0) warnings.push("No TikTok mappings: direct
 
 const categorySummary = Object.fromEntries(GUIDE_CATEGORIES.map((category) => [category, allGuides.filter((guide) => guide.category === category).length]));
 const difficultySummary = Object.fromEntries(GUIDE_DIFFICULTIES.map((difficulty) => [difficulty, allGuides.filter((guide) => guide.difficulty === difficulty).length]));
+const guidePhotoCount = allGuides.filter((guide) => guide.coverPhoto).length;
+if (guidePhotoCount !== suppliedCoverPhotoCount) fail(`Expected ${suppliedCoverPhotoCount} supplied cover photos; found ${guidePhotoCount}.`);
 
 console.log("BrickLabClips guide validation");
 console.log(`Published guides: ${allGuides.length}`);
 console.log("By category:", categorySummary);
 console.log("By difficulty:", difficultySummary);
 console.log("Coverage:", criteria);
-console.log(`Local SVG assets: ${allGuides.length * requiredAssets.length}`);
+console.log(`Motion-and-energy SVG maps: ${allGuides.length * requiredAssets.length}`);
+console.log(`User-provided cover photos: ${guidePhotoCount}`);
+console.log(`Text-only cover fallbacks: ${allGuides.length - guidePhotoCount}`);
 console.log(`Verified TikTok mappings: ${videoManifest.videos.length}`);
 for (const warning of warnings) console.warn(`Warning: ${warning}`);
 

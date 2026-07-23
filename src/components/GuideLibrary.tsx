@@ -1,9 +1,9 @@
 "use client";
 
 import { PlayCircle, Search, SlidersHorizontal } from "lucide-react";
-import Image from "next/image";
 import Link from "next/link";
 import { useMemo, useState } from "react";
+import { GuideThumbnail } from "@/components/guides/GuideThumbnail";
 import type { GuideSummary } from "@/content/guides/types";
 
 type SortMode = "featured" | "time" | "cost" | "title";
@@ -72,7 +72,7 @@ export function GuideLibrary({
         {filteredGuides.map((guide) => (
           <article className="guide-card" key={guide.slug}>
             <Link className="guide-card-image" href={`/library/${guide.slug}`} tabIndex={-1} aria-hidden="true">
-              <Image src={guide.heroImage} alt="" width={720} height={480} />
+              <GuideThumbnail guide={guide} sizes="(max-width: 760px) calc(100vw - 32px), (max-width: 1120px) 50vw, 33vw" />
             </Link>
             <div className="guide-card-body">
               <div className="guide-card-top"><span>{guide.category}</span>{guide.hasVideo ? <span className="video-badge"><PlayCircle size={16} aria-hidden="true" /> Video</span> : null}</div>

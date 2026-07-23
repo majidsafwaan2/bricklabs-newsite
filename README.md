@@ -22,7 +22,7 @@ npm test
 npm run build
 ```
 
-The guide validator checks all 125 published articles and 750 local SVG assets. Playwright covers directory search and filters, representative article types, structured data, sitemap entries, related links, 404 behavior, mobile overflow, and JavaScript-disabled reading.
+The guide validator checks all 125 published articles, 125 local motion maps, optional authorized cover photos, and the shared Builder Moment image. Playwright covers directory search and filters, photo and text-only covers, representative article types, structured data, sitemap entries, related links, 404 behavior, mobile overflow, and JavaScript-disabled reading.
 
 ## Guide architecture
 

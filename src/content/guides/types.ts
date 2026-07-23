@@ -34,11 +34,26 @@ export type GuideVisual = {
   caption?: string;
 };
 
+export type GuidePhoto = {
+  src: string;
+  alt: string;
+  caption: string;
+  width: number;
+  height: number;
+  fit?: "cover" | "contain";
+  focalPoint?: string;
+  relationship: "exact-build" | "bricklabs-demonstration" | "same-mechanism-example" | "inspiration-example";
+  sourceType: "bricklabs-owned" | "user-provided" | "public-domain" | "cc0" | "cc-by" | "cc-by-sa" | "authorized-embed";
+  creator?: string;
+  sourceUrl?: string;
+  licenseName?: string;
+  licenseUrl?: string;
+};
+
 export type GuideStep = {
   id: string;
   title: string;
   instructions: string[];
-  visual: GuideVisual;
   checkpoint?: string;
   commonMistake?: string;
 };
@@ -167,10 +182,9 @@ export type GuideArticle = {
   householdFriendly: boolean;
   classroomFriendly: boolean;
   electronicsOrCode: boolean;
-  heroImage: string;
-  heroAlt: string;
+  coverPhoto?: GuidePhoto;
   conceptVisual: GuideVisual;
-  humorVisual: GuideVisual;
+  builderMomentPhoto: GuidePhoto;
   builderMoment: string;
   video?: VerifiedTikTokVideo;
   wiring?: GuideWiringRow[];
@@ -193,8 +207,7 @@ export type GuideSummary = Pick<
   | "maxCost"
   | "concepts"
   | "tags"
-  | "heroImage"
-  | "heroAlt"
+  | "coverPhoto"
   | "featured"
   | "publishedAt"
   | "updatedAt"
@@ -220,8 +233,7 @@ export function toGuideSummary(guide: GuideArticle): GuideSummary {
     concepts: guide.concepts,
     tags: guide.tags,
     materialsPreview: guide.materials.slice(0, 4).map((material) => material.item),
-    heroImage: guide.heroImage,
-    heroAlt: guide.heroAlt,
+    coverPhoto: guide.coverPhoto,
     hasVideo: Boolean(guide.video),
     featured: guide.featured,
     publishedAt: guide.publishedAt,

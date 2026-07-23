@@ -7,7 +7,7 @@
 1. Category files define project-specific engineering content.
 2. `blueprintFactory.ts` adds category policies, orientation, checkpoints, access options, and shared article fields.
 3. `curatedFactory.ts` converts compact material, step, troubleshooting, extension, and glossary strings into typed objects.
-4. `guideFactory.ts` attaches dated metadata and six local visual paths.
+4. `guideFactory.ts` attaches dated metadata, an optional authorized cover photo, one local concept-map path, and the shared Builder Moment photo.
 5. `registry.ts` exposes ordered articles, summaries, slug lookup, related lookup, and category counts.
 6. `/library/[slug]` statically generates one semantic article route per registry entry.
 
@@ -17,7 +17,7 @@ The article route and renderer are server components. Client JavaScript is limit
 
 ## Static generation and SEO
 
-`generateStaticParams` returns all 125 slugs. `generateMetadata` creates a unique canonical title, description, Open Graph record, Twitter card, and social image. Each article emits matching `HowTo` and `BreadcrumbList` JSON-LD. `src/app/sitemap.ts` uses each guide's real `updatedAt` date.
+`generateStaticParams` returns all 125 slugs. `generateMetadata` creates a unique canonical title, description, Open Graph record, and Twitter card. Guides with an authorized cover include that image in social metadata; text-only guides omit it. Each article emits matching `HowTo` and `BreadcrumbList` JSON-LD. `src/app/sitemap.ts` uses each guide's real `updatedAt` date.
 
 ## Validation contract
 
@@ -25,4 +25,4 @@ The article route and renderer are server components. Client JavaScript is limit
 
 ## Performance
 
-All article pages are SSG. The directory sends summaries rather than article bodies to its client component. Visuals are local SVGs with stable dimensions. TikTok loads only after consent and only on a page with a verified mapping.
+All article pages are SSG. The directory sends summaries rather than article bodies to its client component. Authorized raster photos are optimized local assets with stable dimensions, and every guide keeps a local SVG motion map. TikTok loads only after consent and only on a page with a verified mapping.
