@@ -10,7 +10,7 @@ export const siteContent = {
   navLinks: [
     { label: "Home", href: "/" },
     { label: "Library", href: "/library" },
-    { label: "Build Challenge", href: "/hackathon" },
+    { label: "About Us", href: "/about" },
     { label: "Sponsor", href: "/sponsor" },
     { label: "Get Involved", href: "/get-involved" }
   ],
@@ -200,7 +200,7 @@ export const siteContent = {
   footer: {
     links: [
       { label: "Library", href: "/library" },
-      { label: "Build Challenge", href: "/hackathon" },
+      { label: "About Us", href: "/about" },
       { label: "Sponsor", href: "/sponsor" },
       { label: "Get Involved", href: "/get-involved" },
       { label: "LEGO Fair Play Policy", href: "https://www.lego.com/en-us/legal/notices-and-policies/fair-play" }

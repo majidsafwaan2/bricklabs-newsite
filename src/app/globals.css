@@ -685,23 +685,26 @@ section[id] {
 }
 
 .impact-loop {
-  max-width: 1080px;
+  max-width: 1220px;
   margin: 0 auto;
 }
 
 .impact-loop.compact {
-  max-width: 980px;
+  max-width: 1080px;
 }
 
 .loop-canvas {
   overflow: hidden;
+  aspect-ratio: 1.52 / 1;
   border-radius: 28px;
 }
 
 .loop-canvas img {
   display: block;
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .card-grid {
@@ -822,6 +825,7 @@ section[id] {
   max-width: 760px;
 }
 
+.founder-copy h1,
 .founder-copy h2 {
   margin: 0;
   font-size: clamp(2rem, 3rem, 3rem);
@@ -834,54 +838,35 @@ section[id] {
   line-height: 1.62;
 }
 
-.founder-copy .button {
-  margin-top: 10px;
+.founder-deck {
+  max-width: 1180px;
+  margin-top: 64px;
 }
 
-.modal-open {
-  overflow: hidden;
-}
-
-.modal-backdrop {
-  position: fixed;
-  inset: 0;
-  z-index: 100;
-  display: grid;
-  place-items: center;
-  padding: 20px;
-  background: rgba(17, 17, 17, 0.72);
-}
-
-.deck-modal {
-  display: grid;
-  gap: 14px;
-  width: min(1100px, 100%);
-  max-height: min(92vh, 900px);
-  padding: 18px;
-  background: var(--paper);
-  border: 3px solid var(--ink);
-  border-radius: 18px;
-  box-shadow: var(--shadow);
-}
-
-.deck-modal-header {
+.founder-deck-header {
   display: flex;
   gap: 18px;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 18px;
 }
 
-.deck-modal-header h3 {
+.founder-deck-header h3 {
   margin: 0;
-  font-size: 1.45rem;
+  font-size: clamp(1.55rem, 2.5vw, 2.15rem);
   line-height: 1.1;
+}
+
+.founder-deck-pdf {
+  flex: 0 0 auto;
 }
 
 .deck-slide-frame {
   overflow: hidden;
   background: var(--paper-soft);
-  border: 2px solid var(--ink);
+  border: 3px solid var(--ink);
   border-radius: var(--radius);
+  box-shadow: var(--shadow);
 }
 
 .deck-slide-frame img {
@@ -890,22 +875,15 @@ section[id] {
   height: auto;
 }
 
-.deck-modal iframe {
-  width: 100%;
-  height: min(68vh, 640px);
-  background: var(--paper-soft);
-  border: 2px solid var(--ink);
-  border-radius: var(--radius);
-}
-
-.deck-modal-actions {
+.founder-deck-actions {
   display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
+  gap: 14px;
   align-items: center;
+  justify-content: center;
+  margin-top: 18px;
 }
 
-.deck-modal-actions span {
+.founder-deck-actions span {
   min-width: 64px;
   text-align: center;
   font-weight: 950;
@@ -1573,27 +1551,29 @@ section[id] {
 @media (max-width: 900px) {
   .hero-home {
     min-height: auto;
+    display: block;
   }
 
   .hero-home .hero-content {
-    padding: 76px 0 540px;
+    padding: 64px 0 72px;
   }
 
   .hero-illustration {
-    top: auto;
-    right: 50%;
-    bottom: 34px;
-    width: min(82vw, 620px);
-    height: auto;
-    border: 3px solid var(--ink);
-    border-radius: 24px;
-    box-shadow: var(--shadow);
-    transform: translateX(50%);
+    position: relative;
+    inset: auto;
+    width: 100%;
+    height: clamp(280px, 58vw, 480px);
+    border: 0;
+    border-bottom: 3px solid var(--ink);
+    border-radius: 0;
+    box-shadow: none;
+    transform: none;
   }
 
   .hero-illustration img {
-    height: auto;
-    aspect-ratio: 4 / 3;
+    height: 100%;
+    aspect-ratio: auto;
+    object-position: center 44%;
   }
 
   .hero-home .hero-copy {
@@ -1677,7 +1657,7 @@ section[id] {
   }
 
   .hero-home .hero-content {
-    padding: 68px 0 390px;
+    padding: 52px 0 60px;
   }
 
   .hero-description {
@@ -1694,8 +1674,9 @@ section[id] {
   }
 
   .hero-illustration {
-    width: min(92vw, 520px);
-    transform: translateX(50%);
+    width: 100%;
+    height: min(74vw, 340px);
+    transform: none;
   }
 
   .section {
@@ -1704,6 +1685,7 @@ section[id] {
 
   .section-header h2,
   .two-column h2,
+  .founder-copy h1,
   .founder-copy h2,
   .feature-panel h2,
   .form-panel h2 {
@@ -1745,6 +1727,30 @@ section[id] {
 
   .founder-layout {
     gap: 26px;
+  }
+
+  .founder-deck {
+    margin-top: 44px;
+  }
+
+  .founder-deck-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .founder-deck-pdf {
+    width: auto;
+  }
+
+  .founder-deck-actions {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+    gap: 8px;
+  }
+
+  .founder-deck-actions .button {
+    width: 100%;
+    padding-inline: 10px;
   }
 
   .featured-guide-card,

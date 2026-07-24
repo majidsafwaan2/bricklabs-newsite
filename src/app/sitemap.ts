@@ -3,10 +3,10 @@ import { guideSummaries } from "@/content/guides/registry";
 import { siteContent } from "@/data/siteContent";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const routes = ["", "/library", "/hackathon", "/sponsor", "/get-involved"];
+  const routes = ["", "/about", "/library", "/hackathon", "/sponsor", "/get-involved"];
   const staticRoutes: MetadataRoute.Sitemap = routes.map((route) => ({
     url: `${siteContent.brand.siteUrl}${route}`,
-    lastModified: new Date("2026-07-22"),
+    lastModified: new Date("2026-07-24"),
     changeFrequency: "weekly",
     priority: route === "" ? 1 : 0.8
   }));

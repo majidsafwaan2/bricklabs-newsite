@@ -81,7 +81,8 @@ test("sitemap includes all guide URLs", async ({ request }) => {
   const response = await request.get("/sitemap.xml");
   expect(response.status()).toBe(200);
   const xml = await response.text();
-  expect((xml.match(/<loc>/g) ?? []).length).toBe(130);
+  expect((xml.match(/<loc>/g) ?? []).length).toBe(131);
+  expect(xml).toContain("/about");
   expect(xml).toContain("/library/gear-ratio-demonstrator");
   expect(xml).toContain("/library/makecode-physics-platformer");
 });

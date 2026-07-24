@@ -5,7 +5,6 @@ import { FounderBackground } from "@/components/FounderBackground";
 import { Hero } from "@/components/Hero";
 import { ImpactDashboard } from "@/components/ImpactDashboard";
 import { ImpactLoopGraphic } from "@/components/ImpactLoopGraphic";
-import { ProgramCards } from "@/components/ProgramCards";
 import { SectionHeader } from "@/components/SectionHeader";
 import { SourceBackedProblemSection } from "@/components/SourceBackedProblemSection";
 import { siteContent } from "@/data/siteContent";
@@ -71,15 +70,6 @@ export default function HomePage() {
             {siteContent.loopSummary}
           </SectionHeader>
           <ImpactLoopGraphic />
-        </div>
-      </section>
-
-      <section className="section">
-        <div className="container">
-          <SectionHeader eyebrow="Explore" title="Pick a path and start building.">
-            Guides, challenges, and material requests are designed for classrooms, clubs, and curious builders.
-          </SectionHeader>
-          <ProgramCards programs={siteContent.programs} />
         </div>
       </section>
 
