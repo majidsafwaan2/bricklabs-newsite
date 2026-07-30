@@ -24,7 +24,7 @@ export const siteContent = {
     { label: "Followers", value: "20.4K" }
   ],
   impactStats: [
-    { label: "Parts given to schools", value: "1,300+" },
+    { label: "Parts allocated to schools", value: "1,300+" },
     { label: "Schools supported", value: "2" },
     { label: "Materials raised", value: "$2,000+" },
     { label: "Students reached", value: "55+" },

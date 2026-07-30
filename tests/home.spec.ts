@@ -7,6 +7,14 @@ test.describe("home page story and navigation", () => {
 
   test("About Us has a dedicated page while the founder story remains on the homepage", async ({ page }) => {
     await expect(page.locator(".hero-illustration img")).toHaveAttribute("src", /candle-linkage-build/);
+    await expect(page.getByText("Parts allocated to schools", { exact: true })).toBeVisible();
+    await expect(
+      page.getByText(
+        "BricklabClips already reaches millions of people each month. This dashboard shows what has been raised.",
+        { exact: true }
+      )
+    ).toBeVisible();
+    await expect(page.getByText("School support numbers update as materials are raised.", { exact: true })).toBeVisible();
     const aboutLink = page.locator(".desktop-nav").getByRole("link", { name: "About Us" });
     await expect(aboutLink).toHaveAttribute("href", "/about");
     await expect(page.locator(".desktop-nav").getByRole("link", { name: "Build Challenge" })).toHaveCount(0);

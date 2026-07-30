@@ -56,11 +56,10 @@ export default function HomePage() {
       <section className="section section-dark">
         <div className="container">
           <SectionHeader eyebrow="How BricklabClips helps" title="Reach now. Materials next.">
-            BricklabClips already reaches millions of people each month. This dashboard shows what has been raised, purchased,
-            and shipped for schools so far.
+            BricklabClips already reaches millions of people each month. This dashboard shows what has been raised.
           </SectionHeader>
           <ImpactDashboard metrics={homeMetrics} />
-          <p className="small-note">School support numbers update as materials are raised, purchased, and delivered.</p>
+          <p className="small-note">School support numbers update as materials are raised.</p>
         </div>
       </section>
 
