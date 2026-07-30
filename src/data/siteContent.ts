@@ -150,37 +150,93 @@ export const siteContent = {
     ]
   },
   sponsor: {
-    fundingUses: [
-      "Robotics parts",
-      "Motors and sensors",
-      "Classroom tools",
-      "Cardboard/build materials",
-      "Challenge prizes",
-      "Shipping and supplies"
+    email: "majidsafwaan2@gmail.com",
+    impactStats: [
+      { value: "20,000+", label: "Followers" },
+      { value: "118,000", label: "Approx. average views per TikTok video" },
+      { value: "16M+", label: "Monthly viewers" },
+      { value: "$2,000", label: "Committed to school STEM programs" },
+      { value: "2", label: "Nearby middle schools previously supported" }
     ],
-    sponsorReceives: [
-      "Clear call before launch",
-      "Agreed campaign scope",
-      "Transparent materials report",
-      "Optional brand mention",
-      "Disclosed sponsored content if content is included",
-      "Photos/testimonials only when schools approve"
+    schoolsInFocus: [
+      "Belmont Ridge Middle School",
+      "Watson Mountain Middle School",
+      "Heritage High School",
+      "Additional Virginia schools with demonstrated needs for STEM equipment and materials"
     ],
-    faqs: [
+    fundsStatement:
+      "100% of sponsorship proceeds received by BrickLabClips, excluding unavoidable payment-processing fees, will be allocated toward equipment, materials, and program support for participating school STEM programs.",
+    tiers: [
       {
-        question: "Is sponsorship customized?",
-        answer:
-          "No. Campaign scope, deliverables, and reporting are agreed on before launch based on the sponsor goal and school support need."
+        name: "Community Sponsor",
+        price: "$250",
+        description: "Help provide useful building materials and classroom supplies for students.",
+        benefits: [
+          "Company name and linked logo on the BrickLabClips sponsorship page for one month",
+          "Recognition in one BrickLabClips TikTok video caption and end card",
+          "Thank-you acknowledgment in a sponsorship impact update",
+          "Confirmation of the school program toward which the funding was allocated"
+        ],
+        buttonLabel: "Become a Community Sponsor",
+        emailSubject: "BrickLabClips Community Sponsor Inquiry"
       },
       {
-        question: "Can sponsors provide parts instead of cash support?",
-        answer:
-          "Yes. In-kind parts, shipping help, challenge prizes, and classroom materials can all be useful when they match real school needs."
+        name: "STEM Partner",
+        price: "$500",
+        description:
+          "Support a larger equipment or materials need while receiving extended sponsor recognition.",
+        benefits: [
+          "Company name and linked logo on the sponsorship page for three months",
+          "Sponsor recognition in eligible BrickLabClips TikTok content reaching at least 500,000 cumulative views",
+          "Recognition in relevant school-funding and impact updates",
+          "Brief post-campaign summary explaining how the sponsorship was used"
+        ],
+        buttonLabel: "Become a STEM Partner",
+        emailSubject: "BrickLabClips STEM Partner Inquiry",
+        recommended: true
       },
       {
-        question: "Are views guaranteed?",
-        answer:
-          "No. BricklabClips can align scope and reporting before launch, but does not guarantee views or engagement."
+        name: "Engineering Impact Partner",
+        price: "$1,000",
+        description:
+          "Make a larger contribution toward hands-on STEM equipment and student engineering opportunities.",
+        benefits: [
+          "Featured company name, linked logo, and priority placement on the sponsorship page for six months",
+          "Sponsor recognition across eligible BrickLabClips TikTok videos reaching at least 1 million cumulative views",
+          "Recognition in major BrickLabClips school-funding announcements",
+          "Detailed impact summary describing how the funds supported participating school programs"
+        ],
+        buttonLabel: "Become an Engineering Impact Partner",
+        emailSubject: "BrickLabClips Engineering Impact Partner Inquiry"
+      }
+    ],
+    customSupport:
+      "Every contribution helps. Companies may also contact BrickLabClips about a smaller contribution, a custom sponsorship amount, an in-kind equipment donation, or a partnership structured around a specific school need.",
+    details: [
+      {
+        title: "Cumulative View Commitments",
+        body:
+          "Cumulative-view commitments are fulfilled across eligible BrickLabClips TikTok videos posted during the sponsorship period. If the applicable view target is not reached within 90 days, sponsor recognition will continue on additional eligible videos until the committed cumulative view total is reached."
+      },
+      {
+        title: "Measurement",
+        body:
+          "View totals are based on TikTok's publicly displayed view counts and available account analytics. Sponsorship commitments apply to cumulative views and sponsor placement. They do not guarantee clicks, leads, sales, conversions, or other business outcomes."
+      },
+      {
+        title: "Disclosure",
+        body:
+          "Sponsored content will be clearly disclosed in accordance with applicable platform and advertising requirements."
+      },
+      {
+        title: "Content and School Approval",
+        body:
+          "Student photographs, school names, testimonials, or school-specific materials will only be used when the appropriate permission has been received."
+      },
+      {
+        title: "Final Scope",
+        body:
+          "BrickLabClips and the sponsor will confirm the recognition format, timing, branding materials, and intended school impact before the sponsorship begins."
       }
     ]
   },
