@@ -44,12 +44,16 @@ export function Hero({ eyebrow, title, description, actions = [], children, visu
 
 function HeroIllustration() {
   return (
-    <div className="hero-illustration" role="img" aria-label="Students building with BrickLabs materials">
+    <div
+      className="hero-illustration"
+      role="img"
+      aria-label="Candle-powered linkage build made with brick-compatible engineering parts"
+    >
       <Image
-        src="/images/students-building.png"
-        alt="Students building with hands-on materials at a BrickLabs activity."
-        width={1448}
-        height={1086}
+        src="/images/candle-linkage-build.png"
+        alt="A candle-powered linkage build made with brick-compatible engineering parts."
+        width={1120}
+        height={1270}
         priority
       />
     </div>

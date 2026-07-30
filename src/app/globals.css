@@ -380,6 +380,7 @@ textarea {
   bottom: 0;
   width: 50%;
   overflow: hidden;
+  background: #402322;
   border-left: 3px solid var(--ink);
 }
 
@@ -387,7 +388,8 @@ textarea {
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  object-position: center;
 }
 
 .hero-stat-row {
@@ -1562,7 +1564,7 @@ section[id] {
     position: relative;
     inset: auto;
     width: 100%;
-    height: clamp(280px, 58vw, 480px);
+    height: min(84vw, 620px);
     border: 0;
     border-bottom: 3px solid var(--ink);
     border-radius: 0;
@@ -1573,7 +1575,7 @@ section[id] {
   .hero-illustration img {
     height: 100%;
     aspect-ratio: auto;
-    object-position: center 44%;
+    object-position: center;
   }
 
   .hero-home .hero-copy {
@@ -1675,7 +1677,7 @@ section[id] {
 
   .hero-illustration {
     width: 100%;
-    height: min(74vw, 340px);
+    height: min(113vw, 520px);
     transform: none;
   }
 
