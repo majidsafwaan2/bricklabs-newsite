@@ -12,6 +12,7 @@ test.describe("sponsorship page", () => {
     );
     await expect(studentImage).toHaveAttribute("src", /students-building/);
     await expect(studentImage).toBeVisible();
+    await expect(page.getByText("This is a mock AI-generated image", { exact: true })).toBeVisible();
 
     for (const value of ["20,000+", "118,000", "16M+", "$2,000", "2"]) {
       await expect(page.locator(".sponsor-impact-card").getByText(value, { exact: true })).toBeVisible();

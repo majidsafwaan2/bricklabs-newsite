@@ -50,6 +50,7 @@ export default function SponsorPage() {
               sizes="(max-width: 900px) 100vw, 52vw"
               priority
             />
+            <figcaption className="sponsor-image-disclosure">This is a mock AI-generated image</figcaption>
           </figure>
         </div>
       </section>
