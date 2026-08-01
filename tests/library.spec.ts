@@ -7,8 +7,9 @@ test.describe("build guide directory", () => {
   });
 
   test("renders all 125 published guide cards with valid route URLs", async ({ page }) => {
-    await expect(page.getByRole("heading", { name: "Pick a build. Make it move." })).toBeVisible();
-    await expect(page.getByText("125 complete projects", { exact: false })).toBeVisible();
+    await expect(page.getByRole("heading", { name: "Find your next project." })).toBeVisible();
+    await expect(page.getByRole("heading", { name: "Pick a build. Make it move." })).toHaveCount(0);
+    await expect(page.getByText("125 guides live", { exact: true })).toBeVisible();
     const cardLinks = await page.locator(".guide-card h2 a").evaluateAll((links) => links.map((link) => link.getAttribute("href")));
     expect(cardLinks).toHaveLength(125);
     expect(new Set(cardLinks)).toEqual(new Set(guideSummaries.map((guide) => `/library/${guide.slug}`)));
