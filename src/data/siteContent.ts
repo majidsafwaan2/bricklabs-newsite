@@ -23,6 +23,14 @@ export const siteContent = {
     { label: "Monthly views", value: "16M+" },
     { label: "Followers", value: "20.4K" }
   ],
+  homeNewsFeature: {
+    videoSrc: "/media/bricklabclips-fox5dc.mp4",
+    posterSrc: "/media/bricklabclips-fox5dc-poster.jpg",
+    audienceValue: "750,000+",
+    audienceLabel: "Live Viewers Across the Nation",
+    description:
+      "Founder Safwaan Majid joined FOX 5 DC live on air to share BrickLabClips' mission with viewers nationwide."
+  },
   impactStats: [
     { label: "Parts allocated to schools", value: "1,300+" },
     { label: "Schools supported", value: "2" },

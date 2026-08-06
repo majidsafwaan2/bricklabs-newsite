@@ -23,6 +23,7 @@ export default function HomePage() {
         eyebrow="Watch it. Build it. Share it."
         title="Build what you imagine."
         visual="home"
+        newsFeature={siteContent.homeNewsFeature}
         actions={[
           { label: "Explore Builds", href: "/library", variant: "dark" },
           { label: "Request Materials", href: "/get-involved#school-request", variant: "secondary" },

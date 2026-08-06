@@ -6,7 +6,16 @@ test.describe("home page story and navigation", () => {
   });
 
   test("About Us has a dedicated page while the founder story remains on the homepage", async ({ page }) => {
-    await expect(page.locator(".hero-illustration img")).toHaveAttribute("src", /candle-linkage-build/);
+    const newsVideo = page.locator(".hero-news-video");
+    await expect(newsVideo).toHaveAttribute("src", "/media/bricklabclips-fox5dc.mp4");
+    await expect(newsVideo).toHaveAttribute("autoplay", "");
+    await expect(newsVideo).toHaveAttribute("playsinline", "");
+    await expect(newsVideo).toHaveAttribute("loop", "");
+    await expect(newsVideo).toHaveAttribute("controls", "");
+    expect(await newsVideo.evaluate((element) => (element as HTMLVideoElement).muted)).toBe(true);
+    await expect(page.getByText("750,000+", { exact: true })).toBeVisible();
+    await expect(page.getByText("Live Viewers Across the Nation", { exact: true })).toBeVisible();
+    await expect(page.locator('img[src*="candle-linkage-build"]')).toHaveCount(0);
     await expect(page.getByText("Parts allocated to schools", { exact: true })).toBeVisible();
     await expect(
       page.getByText(

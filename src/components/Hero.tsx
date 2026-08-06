@@ -1,5 +1,4 @@
 import type { ReactNode } from "react";
-import Image from "next/image";
 import { ButtonLink } from "./ButtonLink";
 
 type HeroAction = {
@@ -15,12 +14,27 @@ type HeroProps = {
   actions?: HeroAction[];
   children?: ReactNode;
   visual?: "home" | "simple";
+  newsFeature?: {
+    videoSrc: string;
+    posterSrc: string;
+    audienceValue: string;
+    audienceLabel: string;
+    description: string;
+  };
 };
 
-export function Hero({ eyebrow, title, description, actions = [], children, visual = "simple" }: HeroProps) {
+export function Hero({
+  eyebrow,
+  title,
+  description,
+  actions = [],
+  children,
+  visual = "simple",
+  newsFeature
+}: HeroProps) {
   return (
     <section className={visual === "home" ? "hero hero-home" : "hero hero-simple"}>
-      {visual === "home" ? <HeroIllustration /> : null}
+      {visual === "home" && newsFeature ? <HeroNewsFeature feature={newsFeature} /> : null}
       <div className="container hero-content">
         <div className="hero-copy">
           {eyebrow ? <p className="eyebrow">{eyebrow}</p> : null}
@@ -42,20 +56,31 @@ export function Hero({ eyebrow, title, description, actions = [], children, visu
   );
 }
 
-function HeroIllustration() {
+function HeroNewsFeature({ feature }: { feature: NonNullable<HeroProps["newsFeature"]> }) {
   return (
-    <div
-      className="hero-illustration"
-      role="img"
-      aria-label="Candle-powered linkage build made with brick-compatible engineering parts"
-    >
-      <Image
-        src="/images/candle-linkage-build.png"
-        alt="A candle-powered linkage build made with brick-compatible engineering parts."
-        width={1120}
-        height={1270}
-        priority
-      />
+    <div className="hero-illustration hero-news-feature">
+      <div className="hero-news-video-wrap">
+        <video
+          className="hero-news-video"
+          src={feature.videoSrc}
+          poster={feature.posterSrc}
+          aria-label="Safwaan Majid discussing BrickLabClips live on FOX 5 DC"
+          aria-describedby="hero-news-description"
+          autoPlay
+          muted
+          loop
+          playsInline
+          controls
+          preload="metadata"
+        />
+      </div>
+      <div className="hero-news-caption" id="hero-news-description">
+        <p className="hero-news-audience">
+          <strong>{feature.audienceValue}</strong>
+          <span>{feature.audienceLabel}</span>
+        </p>
+        <p>{feature.description}</p>
+      </div>
     </div>
   );
 }
