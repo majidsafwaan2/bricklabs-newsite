@@ -12,6 +12,7 @@ test.describe("home page story and navigation", () => {
     await expect(newsVideo).toHaveAttribute("playsinline", "");
     await expect(newsVideo).toHaveAttribute("loop", "");
     await expect(newsVideo).toHaveAttribute("controls", "");
+    await expect(newsVideo).toHaveCSS("object-fit", "contain");
     expect(await newsVideo.evaluate((element) => (element as HTMLVideoElement).muted)).toBe(true);
     await expect(page.getByText("750,000+", { exact: true })).toBeVisible();
     await expect(page.getByText("Live Viewers Across the Nation", { exact: true })).toBeVisible();
