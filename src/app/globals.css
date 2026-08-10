@@ -626,6 +626,71 @@ section[id] {
   border-block: 3px solid var(--ink);
 }
 
+.recognition-section {
+  background: #eef6ff;
+  border-bottom: 3px solid var(--ink);
+}
+
+.recognition-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 0.85fr) minmax(420px, 1.15fr);
+  gap: clamp(42px, 7vw, 96px);
+  align-items: center;
+}
+
+.recognition-copy {
+  max-width: 560px;
+}
+
+.recognition-copy h2 {
+  margin: 0;
+  font-size: clamp(2.5rem, 5vw, 4.6rem);
+  line-height: 1;
+  text-wrap: balance;
+}
+
+.recognition-copy > p:not(.eyebrow) {
+  margin: 24px 0 0;
+  color: var(--ink-soft);
+  font-size: 1.12rem;
+}
+
+.recognition-copy blockquote {
+  margin: 30px 0 0;
+  padding: 18px 0 18px 22px;
+  border-left: 8px solid var(--yellow);
+  font-size: 1.3rem;
+  font-weight: 900;
+  line-height: 1.25;
+}
+
+.recognition-letter {
+  width: min(100%, 590px);
+  margin: 0 auto;
+}
+
+.recognition-letter a {
+  display: block;
+  overflow: hidden;
+  background: #ebeae2;
+  border: 3px solid var(--ink);
+  border-radius: var(--radius);
+  box-shadow: 14px 14px 0 rgba(17, 17, 17, 0.14);
+}
+
+.recognition-letter img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.recognition-letter figcaption {
+  margin-top: 14px;
+  color: var(--muted);
+  font-size: 0.86rem;
+  text-align: center;
+}
+
 .section-dark {
   color: var(--paper);
   background: var(--ink);
@@ -1930,6 +1995,14 @@ section[id] {
 }
 
 @media (max-width: 900px) {
+  .recognition-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .recognition-copy {
+    max-width: 680px;
+  }
+
   .sponsor-opening-grid,
   .sponsor-focus {
     grid-template-columns: 1fr;

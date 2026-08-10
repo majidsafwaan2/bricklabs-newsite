@@ -29,6 +29,24 @@ test.describe("home page story and navigation", () => {
     await expect(aboutLink).toHaveAttribute("href", "/about");
     await expect(page.locator(".desktop-nav").getByRole("link", { name: "Build Challenge" })).toHaveCount(0);
     await expect(page.locator("#about").getByRole("heading", { name: "About Us" })).toBeVisible();
+    const recognition = page.locator("#congressional-recognition");
+    await expect(recognition.getByRole("heading", { name: "Congressional Recognition" })).toBeVisible();
+    await expect(
+      recognition.getByAltText("Recognition letter from United States Senator Mark R. Warner to Safwaan Majid.")
+    ).toBeVisible();
+    await expect(recognition.getByText("Mailing address redacted for privacy.", { exact: false })).toBeVisible();
+    expect(
+      await page.evaluate(() => {
+        const recognitionSection = document.querySelector("#congressional-recognition");
+        const aboutSection = document.querySelector("#about");
+
+        return Boolean(
+          recognitionSection &&
+            aboutSection &&
+            (recognitionSection.compareDocumentPosition(aboutSection) & Node.DOCUMENT_POSITION_FOLLOWING)
+        );
+      })
+    ).toBe(true);
     await expect(page.getByRole("heading", { name: "Pick a path and start building." })).toHaveCount(0);
   });
 

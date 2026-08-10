@@ -38,6 +38,14 @@ export const siteContent = {
     { label: "Students reached", value: "55+" },
     { label: "2026 goal", value: "10 requests" }
   ],
+  congressionalRecognition: {
+    title: "Congressional Recognition",
+    description:
+      "U.S. Senator Mark R. Warner congratulated Safwaan on establishing BrickLabClips and commended his leadership, advocacy, and commitment to expanding STEM materials and opportunities for students across Virginia.",
+    quote: "I commend you for your vision and ingenuity.",
+    imagePath: "/images/congressional-recognition-warner.jpg",
+    caption: "Letter dated August 16, 2026. Mailing address redacted for privacy."
+  },
   problemSources: [
     {
       label: "39%",

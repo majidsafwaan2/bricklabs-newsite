@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import { ButtonLink } from "@/components/ButtonLink";
+import { CongressionalRecognition } from "@/components/CongressionalRecognition";
 import { FounderBackground } from "@/components/FounderBackground";
 import { Hero } from "@/components/Hero";
 import { ImpactDashboard } from "@/components/ImpactDashboard";
@@ -72,6 +73,8 @@ export default function HomePage() {
           <ImpactLoopGraphic />
         </div>
       </section>
+
+      <CongressionalRecognition />
 
       <FounderBackground />
 
